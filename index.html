@@ -21,6 +21,18 @@
   </head>
 
   <body id="main-wrapper">
+    <style>
+      #body-size-indicator {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 0;
+        height: 6px;
+        z-index: 999;
+        background-color: #894ef7;
+      }
+    </style>
+    <div id="body-size-indicator"></div>
     <header id="header-nav">
       <nav>
         <div class="leader">adil.</div>
@@ -177,10 +189,219 @@
       </section>
     </div>
 
+    <style>
+      .item-single {
+        display: none;
+      }
+      /* img {vertical-align: middle;} */
+
+      /* Slideshow container */
+      .slideshow-container {
+        position: relative;
+        width: 90%;
+        max-width: 1000px;
+        border-radius: 0 0 15px 15px;
+        margin: 0 auto;
+        overflow: hidden;
+      }
+      .slideshow-container img {
+        vertical-align: middle;
+        width: 60%;
+        max-width: 500px;
+        border-radius: 15px;
+        box-shadow: -1px 3px 32px -3px rgba(0, 0, 0, 0.75);
+        -webkit-box-shadow: -1px 3px 32px -3px rgba(0, 0, 0, 0.75);
+        -moz-box-shadow: -1px 3px 32px -3px rgba(0, 0, 0, 0.75);
+      }
+
+      /* Caption text */
+      .slideshow-container .text {
+        color: #f2f2f2;
+        font-size: 15px;
+        padding: 8px 12px;
+        position: absolute;
+        bottom: 8px;
+        width: 100%;
+        text-align: center;
+      }
+
+      /* The dots/bullets/indicators */
+      .slideshow-container .dot {
+        height: 15px;
+        width: 15px;
+        margin: 0 2px;
+        background-color: #bbb;
+        border-radius: 50%;
+        display: inline-block;
+        transition: background-color 0.6s ease;
+      }
+
+      .slideshow-container .active {
+        background-color: #717171;
+      }
+
+      /* Fading animation */
+      .move-in {
+        -webkit-animation-name: moveIn;
+        -webkit-animation-duration: 5s;
+        animation-name: moveIn;
+        animation-duration: 5s;
+      }
+
+      @-webkit-keyframes moveIn {
+        0% {
+          transform: translateX(100%);
+          opacity: 0;
+        }
+        20% {
+          transform: translateX(0);
+          opacity: 1;
+        }
+        80% {
+          transform: translateX(0);
+          opacity: 1;
+        }
+        100% {
+          transform: translateX(-100%);
+          opacity: 0;
+        }
+      }
+
+      @keyframes moveIn {
+        0% {
+          transform: translateX(100%) rotate(60deg) scale(0.6);
+          opacity: 0;
+        }
+        20% {
+          transform: translateX(0) scale(0.6);
+          opacity: 1;
+        }
+        40% {
+          transform: translateX(0) scale(1);
+          opacity: 1;
+        }
+        80% {
+          transform: translateX(0);
+          opacity: 1;
+        }
+        100% {
+          transform: translateX(-100%);
+          opacity: 0;
+        }
+      }
+
+      .fade-up {
+        animation: forwards 5s fadeIn ease-in-out;
+      }
+      @keyframes fadeIn {
+        0% {
+          transform: translateY(-100%);
+          opacity: 0;
+        }
+        20% {
+          transform: translateY(0);
+          opacity: 1;
+        }
+        80% {
+          transform: translateY(0);
+          opacity: 1;
+        }
+        100% {
+          transform: translateY(100%);
+          opacity: 0;
+        }
+      }
+      .fade-down {
+        animation: forwards 5s fadeDown ease-in-out;
+      }
+      @keyframes fadeDown {
+        0% {
+          transform: translateY(100%);
+          opacity: 0;
+        }
+        20% {
+          transform: translateY(0);
+          opacity: 1;
+        }
+        80% {
+          transform: translateY(0);
+          opacity: 1;
+        }
+        100% {
+          transform: translateY(-100%);
+          opacity: 0;
+        }
+      }
+
+      .item-single .row .column-6 {
+        padding: 0;
+      }
+    </style>
+
+    <section class="section-gap" style="background-color: #f2f2f2;">
+      <div class="slideshow-container" style="padding: 2rem;">
+        <div class="item-single">
+          <div class="row">
+            <div class="column-6 fade-up">
+              <img src="./static/img/pencil.jpg" style="width: 100%" />
+            </div>
+            <div class="column-6 fade-down" style="padding: 3rem;">
+              <h1>Some Title Here</h1>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Officiis vel dolorem accusantium labore sint vitae eos saepe ut,
+                hic repudiandae numquam sapiente veniam debitis officia quia
+                necessitatibus. Ipsa, culpa ut?
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="item-single move-in">
+          <div class="row">
+            <div class="column-6">
+              <img src="./static/img/pencil.jpg" style="width: 100%" />
+            </div>
+            <div class="column-6" style="padding: 3rem;">
+              <h1>Some Title Here</h1>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Officiis vel dolorem accusantium labore sint vitae eos saepe ut,
+                hic repudiandae numquam sapiente veniam debitis officia quia
+                necessitatibus. Ipsa, culpa ut?
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="item-single move-in">
+          <div class="row">
+            <div class="column-6">
+              <img src="./static/img/pencil.jpg" style="width: 100%" />
+            </div>
+            <div class="column-6" style="padding: 3rem;">
+              <h1>Some Title Here</h1>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Officiis vel dolorem accusantium labore sint vitae eos saepe ut,
+                hic repudiandae numquam sapiente veniam debitis officia quia
+                necessitatibus. Ipsa, culpa ut?
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <br />
+
+      <div style="text-align: center">
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+      </div>
+    </section>
+
     <section class="wrapup-area">
       <div class="wrapper">
         <div class="wrapup-wraper">
-          <div class="wrapup-left" style="padding: 2rem;">
+          <div class="wrapup-left" style="padding: 2rem">
             <h1>Lorem ipsum dolor sit amet</h1>
             <p>
               Lorem ipsum dolor sit amet consectetur, adipisicing elit. Qui,
@@ -189,9 +410,12 @@
               quam voluptates quod adipisci et.
             </p>
           </div>
-          <div class="wrapup-right dark-bg" style="padding: 2rem;">
+          <div class="wrapup-right dark-bg" style="padding: 2rem">
             <div style="position: relative">
-              <h1 class="text-lg">Lorem ipsum <br> dolor sit amet</h1>
+              <h1 class="text-lg">
+                Lorem ipsum <br />
+                dolor sit amet
+              </h1>
               <a href="#" class="btn btn-orange">Want a Developer</a>
             </div>
           </div>
@@ -206,15 +430,15 @@
         display: none;
         position: fixed;
         width: 300px;
-        bottom: 3rem;
-        right: 3rem;
+        bottom: 3.7rem;
+        right: 2rem;
         padding: 1rem 2rem;
-        background-color: rgba(111, 66, 193, .9);
+        background-color: rgba(111, 66, 193, 0.9);
         border-radius: 10px;
         color: #fff;
         transform: scale(0);
         animation-fill-mode: forwards;
-        animation-duration: .5s;
+        animation-duration: 0.5s;
         animation-name: messageAnim;
         animation-timing-function: ease-in-out;
         animation-play-state: paused;
@@ -224,7 +448,7 @@
         border: 1px solid #000;
         background-color: #000;
         border-radius: 2em;
-        padding: .5rem 2rem;
+        padding: 0.5rem 2rem;
         cursor: pointer;
         color: #fff;
       }
@@ -257,11 +481,18 @@
     </style>
 
     <div id="message-box">
-      <img class="chat-img" src="./static/img/positive-comment.svg" alt="Chat With Me">
+      <img
+        class="chat-img"
+        src="./static/img/positive-comment.svg"
+        alt="Chat With Me"
+      />
       <div id="close-btn"><span class="flaticon-error"></span></div>
       <h1>Hello. I'm Here</h1>
       <h4>Seems like you reach at the end of the page.</h4>
-      <p>I would like you to contact with me, because you will get more information about me</p>
+      <p>
+        I would like you to contact with me, because you will get more
+        information about me
+      </p>
       <button>Contact me</button>
     </div>
 
@@ -317,44 +548,63 @@
         /* *********** End Dark Light *********** */
 
         /* *********** Header Nav *********** */
+        const bodySizeIndicator = document.getElementById(
+          "body-size-indicator"
+        );
         const navEle = document.getElementById("header-nav");
         const messageBox = document.getElementById("message-box");
+        const cvDownloadBtn = document.getElementById("cv-download-wrapper");
+
         var msgViewed = false;
 
+        function indicateScrollBar() {
+          const winScroll =
+            document.body.scrollTop || document.documentElement.scrollTop;
+          const height =
+            document.documentElement.scrollHeight -
+            document.documentElement.clientHeight;
+          const scrolled = (winScroll / height) * 100;
+          bodySizeIndicator.style.width = `${scrolled}%`;
+        }
+
         window.onscroll = () => {
+          indicateScrollBar();
+          window.addEventListener("scroll", () => indicateScrollBar());
+
           if (scrollY > 100) {
             navEle.classList.add("nav-light");
           } else {
             navEle.classList.remove("nav-light");
           }
 
-          const cvDownloadBtn = document.getElementById("cv-download-wrapper");
-
-          if (cvDownloadBtn.offsetTop - window.scrollY <= 30) {
+          if (cvDownloadBtn.offsetTop - window.scrollY <= 50) {
             cvDownloadBtn.classList.add("sticky");
-          }
-          else {
+          } else {
             cvDownloadBtn.classList.remove("sticky");
           }
 
           if (!msgViewed) {
-            if (window.innerHeight + window.scrollY >= document.body.offsetHeight - 200) {
+            if (
+              window.innerHeight + window.scrollY >=
+              document.body.offsetHeight - 200
+            ) {
               messageBox.style.display = "block";
               // messageBox.style.animation = "forwards messageAnim .5s ease-in-out";
               messageBox.style.animationPlayState = "running";
             }
           }
-        }
+        };
 
         // message box
         var messageCloseBtn = document.getElementById("close-btn");
         messageCloseBtn.addEventListener("click", function () {
-            msgViewed = true;
-            messageBox.style.animation = "forwards messageCloseAnim .5s ease-in-out";
-            messageBox.addEventListener("animationend", function () {
-              messageBox.style.display = "none";
-            })
-        })
+          msgViewed = true;
+          messageBox.style.animation =
+            "forwards messageCloseAnim .5s ease-in-out";
+          messageBox.addEventListener("animationend", function () {
+            messageBox.style.display = "none";
+          });
+        });
 
         // Pinned
         navpin = document.getElementById("nav-pin");
@@ -393,6 +643,52 @@
         console.log(menuLink);
         /* *********** End Page Navigation *********** */
 
+        /* *********** Slider ************ */
+        var slideIndex = 0;
+        showSlides();
+
+        // function showSlides() {
+        //   var i;
+        //   var slides = document.getElementsByClassName("item-single");
+        //   var dots = document.getElementsByClassName("dot");
+        //   for (i = 0; i < slides.length; i++) {
+        //     slides[i].classList.replace("move-in", "move-out");
+        //     // slides[i].style.animation = "forwards moveOut .5s ease-in-out";
+        //     slides[i].addEventListener("animationend", function () {
+        //       slides[i].style.display = "none";
+        //     })
+        //   }
+        //   slideIndex++;
+        //   if (slideIndex > slides.length) {
+        //     slideIndex = 1;
+        //   }
+        //   for (i = 0; i < dots.length; i++) {
+        //     dots[i].className = dots[i].className.replace(" active", "");
+        //   }
+        //   slides[slideIndex - 1].style.display = "block";
+        //   dots[slideIndex - 1].className += " active";
+        //   setTimeout(showSlides, 2000); // Change image every 2 seconds
+        // }
+
+        function showSlides() {
+          var i;
+          var slides = document.getElementsByClassName("item-single");
+          var dots = document.getElementsByClassName("dot");
+          for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+          }
+          slideIndex++;
+          if (slideIndex > slides.length) {
+            slideIndex = 1;
+          }
+          for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+          }
+          slides[slideIndex - 1].style.display = "block";
+          dots[slideIndex - 1].className += " active";
+          setTimeout(showSlides, 5000); // Change image every 2 seconds
+        }
+        /* ************* End Slider **************/
       });
     </script>
   </body>
