@@ -4,7 +4,15 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="This is the Description" />
+    <meta
+      name="keywords"
+      content="Website, Web design, Web development, Content writer, Data science"
+    />
+
     <title>Adil Mohak</title>
+
+    <link rel="apple-touch-icon" href="favicon.png" />
 
     <!-- Google Rubik font -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -18,40 +26,42 @@
     <link rel="stylesheet" href="./static/font-essential-set/flaticon.css" />
 
     <link rel="stylesheet" href="./static/css/style.css" />
+    <link rel="stylesheet" href="./static/css/animations.css" />
   </head>
 
   <body id="main-wrapper">
-    <style>
-      #body-size-indicator {
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 0;
-        height: 6px;
-        z-index: 999;
-        background-color: #894ef7;
-      }
-    </style>
+    <!-- Preloader -->
+    <div class="preloader">
+      <img src="./static/img/3D-snake.gif" alt="" />
+    </div>
+    <!-- End Preloader -->
+
     <div id="body-size-indicator"></div>
+
+    <!-- Header navbar -->
     <header id="header-nav">
       <nav>
-        <div class="leader">adil.</div>
+        <a href="index.html" class="leader">adil.</a>
         <ul class="menu-list">
           <li>
-            <a href="#home" class="menu-link active" data-page="home">Home</a>
+            <a href="index.html" class="menu-link active" data-page="home"
+              >Home</a
+            >
           </li>
           <li>
-            <a href="#portfolio" class="menu-link" data-page="portfolio"
+            <a href="portfolio.html" class="menu-link" data-page="portfolio"
               >My Portfolios</a
             >
           </li>
           <li>
-            <a href="#bymecoffee" class="menu-link" data-page="bymecoffee"
+            <a href="bymecoffee.html" class="menu-link" data-page="bymecoffee"
               >&heartsuit; By Me Coffee</a
             >
           </li>
           <li>
-            <a href="#contact" class="menu-link" data-page="contact">Contact</a>
+            <a href="contact.html" class="menu-link" data-page="contact"
+              >Contact</a
+            >
           </li>
           <div class="setting-list">
             <button id="dark-light-toggler" title="Change to dark mode">
@@ -65,129 +75,172 @@
       </nav>
     </header>
 
-    <div class="page-wrapper" id="home">
-      <div class="hero">
-        <div
-          class="wrapper"
-          style="display: flex; justify-content: space-between"
-        >
-          <div class="content-hero" style="position: relative">
-            <h1>Lorem ipsum dolor sit amet consectetur adipisicing</h1>
-            <p>
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Omnis
-              fugit beatae rerum recusandae maiores quis accusantium, sapiente
-              ipsum quam similique possimus placeat, quo, iste assumenda
-              consectetur minus quaerat consequatur autem.
-            </p>
-            <div class="btn-group">
-              <a href="#" class="btn btn-orange">Want a Developer</a>
-              <a href="#" class="btn btn-outline-light">Hire a Developer</a>
-            </div>
-          </div>
-          <div class="content-right">
-            <h1 class="hero-intro-title">
-              LOOKING <br />
-              FOR <br />
-              WEB <br />
-              DEVELOPER?
-            </h1>
+    <!-- Banner -->
+    <div class="hero">
+      <div
+        class="wrapper"
+        style="display: flex; justify-content: space-between"
+      >
+        <div class="content-hero" style="position: relative">
+          <h1>Lorem ipsum dolor sit amet consectetur adipisicing</h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Omnis
+            fugit beatae rerum recusandae maiores quis accusantium, sapiente
+            ipsum quam similique possimus placeat, quo, iste assumenda
+            consectetur minus quaerat consequatur autem.
+          </p>
+          <div class="btn-group">
+            <a href="#" class="btn btn-orange">Want a Developer</a>
+            <a href="#" class="btn btn-outline-light">Hire a Developer</a>
           </div>
         </div>
+        <div class="content-right">
+          <h1 class="hero-intro-title">
+            LOOKING <br />
+            FOR <br />
+            WEB <br />
+            DEVELOPER?
+          </h1>
+        </div>
       </div>
+    </div>
 
-      <section class="intro-area section-gap" style="padding-bottom: 0">
-        <div class="wrapper">
-          <div class="row">
-            <div class="column-6" style="padding-bottom: 0">
-              <img
-                width="80%"
-                src="./static/img/avater-3.png"
-                style="margin-bottom: -20px"
-                alt=""
-              />
+    <!-- Intro area -->
+    <section class="intro-area section-gap" style="padding-bottom: 0">
+      <div class="wrapper">
+        <div class="row">
+          <div class="column-6" style="padding-bottom: 0">
+            <img
+              width="80%"
+              src="./static/img/avater-3.png"
+              style="margin-bottom: -20px"
+              alt=""
+            />
+          </div>
+          <div class="column-6">
+            <h1 style="font-size: 5vw">
+              Web Design <br />
+              Gone <span style="color: #6f42c1"> Right </span>
+            </h1>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit
+              quae ipsum sed eveniet? Dolores, labore? Quaerat natus
+              exercitationem, corrupti saepe pariatur quidem incidunt laboriosam
+              maiores sit amet est. Ex, sequi.
+            </p>
+            <div class="btn-wrapper" id="cv-download-wrapper">
+              <a href="#" class="btn btn-orange"
+                ><span class="icon-sm flaticon-resume"></span> Download My CV</a
+              >
+              <button class="btn btn-dark cv-preview-btn">
+                <span class="icon-sm flaticon-file-2"></span> See The Preview
+              </button>
+
+              <div class="content">
+                <button id="sticky-close-btn">
+                  <span class="flaticon-error"></span>
+                </button>
+                <small>Download my CV to know more about me</small>
+              </div>
             </div>
-            <div class="column-6">
-              <h1 style="font-size: 5vw">
-                Web Design <br />
-                Gone <span style="color: #6f42c1"> Right </span>
-              </h1>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit
-                quae ipsum sed eveniet? Dolores, labore? Quaerat natus
-                exercitationem, corrupti saepe pariatur quidem incidunt
-                laboriosam maiores sit amet est. Ex, sequi.
-              </p>
-              <div class="btn-wrapper" id="cv-download-wrapper">
-                <a href="#" class="btn btn-orange">Download My CV</a>
+
+            <div class="modal">
+              <div class="cv-preview">
+                <span class="icon-md flaticon-error modal-close"></span>
+                <iframe
+                  src="./static/files/CV_2021_Adil_Mohammed.pdf"
+                  width="500px"
+                  height="500px"
+                >
+                </iframe>
               </div>
             </div>
           </div>
         </div>
-      </section>
+      </div>
+    </section>
 
-      <section class="section-gap project-area dark-bg shadow-md">
-        <div class="wrapper">
-          <div class="row" style="position: relative">
-            <div class="column-6">
-              <h1>some project name</h1>
+    <!-- Service area -->
+    <section class="section-gap service-area dark-bg">
+      <div class="wrapper">
+        <div class="section-header">
+        <h1>What Do I Do?</h1>
+        <p>Services that I ofer</p>
+        </div>
+        <div class="row" style="position: relative">
+          <div class="column-6">
+            <div class="service-single">
+              <span class="icon-x-lg flaticon-television"></span>
+              <h1>WEB DESIGN</h1>
               <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem
-                adipisci mollitia iure sapiente eveniet voluptas in, ipsa eius
-                aspernatur consectetur necessitatibus at itaque quam, numquam
-                reiciendis voluptatem! Ducimus, at ipsa.
-              </p>
-            </div>
-            <div class="column-6">
-              <h1>some project name</h1>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem
-                adipisci mollitia iure sapiente eveniet voluptas in, ipsa eius
-                aspernatur consectetur necessitatibus at itaque quam, numquam
-                reiciendis voluptatem! Ducimus, at ipsa.
-              </p>
-            </div>
-            <div class="column-6">
-              <h1>some project name</h1>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem
-                adipisci mollitia iure sapiente eveniet voluptas in, ipsa eius
-                aspernatur consectetur necessitatibus at itaque quam, numquam
-                reiciendis voluptatem! Ducimus, at ipsa.
+                Creates the look, layout, and features of a website. Plan,
+                create and code internet sites and web pages. Combine text with
+                sounds, pictures, graphics and video clips. Dynamic and
+                Responsive Design.
               </p>
             </div>
           </div>
-          <div class="row">
-            <div class="column-6">
-              <h1>some project name</h1>
+          <div class="column-6">
+            <div class="service-single">
+              <span class="icon-x-lg flaticon-more-2"></span>
+              <h1>WEB DEVELOPMENT</h1>
               <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem
-                adipisci mollitia iure sapiente eveniet voluptas in, ipsa eius
-                aspernatur consectetur necessitatibus at itaque quam, numquam
-                reiciendis voluptatem! Ducimus, at ipsa.
+                Building, creating, and maintaining websites. It includes
+                aspects such as web design, web publishing, web programming, and
+                database management. We build a websites with a high security
+                and scalablity
               </p>
             </div>
-            <div class="column-6">
-              <h1>some project name</h1>
+          </div>
+          <div class="column-6">
+            <div class="service-single">
+              <span class="icon-x-lg flaticon-notepad-2"></span>
+              <h1>Content Writer</h1>
               <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem
-                adipisci mollitia iure sapiente eveniet voluptas in, ipsa eius
-                aspernatur consectetur necessitatibus at itaque quam, numquam
-                reiciendis voluptatem! Ducimus, at ipsa.
-              </p>
-            </div>
-            <div class="column-6">
-              <h1>some project name</h1>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem
-                adipisci mollitia iure sapiente eveniet voluptas in, ipsa eius
-                aspernatur consectetur necessitatibus at itaque quam, numquam
-                reiciendis voluptatem! Ducimus, at ipsa.
+                The lighting, the composition, the subject, and everything else
+                work together harmoniously to convey the right vision or
+                message. Portrait Photography, Photojournalism, Fashion
+                Photography, Sports Photography, Still Life Photography,
+                Editorial Photography, Architectural Photography...
               </p>
             </div>
           </div>
         </div>
-      </section>
-    </div>
+        <div class="row">
+          <div class="column-6">
+            <div class="service-single">
+              <span class="icon-x-lg flaticon-database"></span>
+              <h1>Data Analysis With Python</h1>
+              <p></p>
+            </div>
+          </div>
+          <div class="column-6">
+            <div class="service-single">
+              <span class="icon-x-lg flaticon-smartphone-2"></span>
+              <h1>RESPONSIVE DESIGN</h1>
+              <p>
+                We creates dynamic changes to the appearance of a website,
+                depending on the screen size and orientation of the device being
+                used to view it. In responsive design, page elements reshuffle
+                as the viewport grows or shrinks.
+              </p>
+            </div>
+          </div>
+          <div class="column-6">
+            <div class="service-single">
+              <span class="icon-x-lg flaticon-windows-3"></span>
+              <h1>GRAPHIC DESIGN</h1>
+              <p>
+                We create visual concepts, to communicate ideas that inspire,
+                inform, and captivate consumers. We develop the overall layout
+                and production design for applications such as advertisements,
+                brochures, magazines, reports and so on...
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
     <style>
       .item-single {
@@ -208,10 +261,10 @@
         vertical-align: middle;
         width: 60%;
         max-width: 500px;
-        border-radius: 15px;
-        box-shadow: -1px 3px 32px -3px rgba(0, 0, 0, 0.75);
-        -webkit-box-shadow: -1px 3px 32px -3px rgba(0, 0, 0, 0.75);
-        -moz-box-shadow: -1px 3px 32px -3px rgba(0, 0, 0, 0.75);
+        border-radius: 5px;
+        box-shadow: -1px 3px 32px -3px rgba(0, 0, 0, 0.2);
+        -webkit-box-shadow: -1px 3px 32px -3px rgba(0, 0, 0, 0.2);
+        -moz-box-shadow: -1px 3px 32px -3px rgba(0, 0, 0, 0.2);
       }
 
       /* Caption text */
@@ -240,112 +293,30 @@
         background-color: #717171;
       }
 
-      /* Fading animation */
-      .move-in {
-        -webkit-animation-name: moveIn;
-        -webkit-animation-duration: 5s;
-        animation-name: moveIn;
-        animation-duration: 5s;
-      }
-
-      @-webkit-keyframes moveIn {
-        0% {
-          transform: translateX(100%);
-          opacity: 0;
-        }
-        20% {
-          transform: translateX(0);
-          opacity: 1;
-        }
-        80% {
-          transform: translateX(0);
-          opacity: 1;
-        }
-        100% {
-          transform: translateX(-100%);
-          opacity: 0;
-        }
-      }
-
-      @keyframes moveIn {
-        0% {
-          transform: translateX(100%) rotate(60deg) scale(0.6);
-          opacity: 0;
-        }
-        20% {
-          transform: translateX(0) scale(0.6);
-          opacity: 1;
-        }
-        40% {
-          transform: translateX(0) scale(1);
-          opacity: 1;
-        }
-        80% {
-          transform: translateX(0);
-          opacity: 1;
-        }
-        100% {
-          transform: translateX(-100%);
-          opacity: 0;
-        }
-      }
-
-      .fade-up {
-        animation: forwards 5s fadeIn ease-in-out;
-      }
-      @keyframes fadeIn {
-        0% {
-          transform: translateY(-100%);
-          opacity: 0;
-        }
-        20% {
-          transform: translateY(0);
-          opacity: 1;
-        }
-        80% {
-          transform: translateY(0);
-          opacity: 1;
-        }
-        100% {
-          transform: translateY(100%);
-          opacity: 0;
-        }
-      }
-      .fade-down {
-        animation: forwards 5s fadeDown ease-in-out;
-      }
-      @keyframes fadeDown {
-        0% {
-          transform: translateY(100%);
-          opacity: 0;
-        }
-        20% {
-          transform: translateY(0);
-          opacity: 1;
-        }
-        80% {
-          transform: translateY(0);
-          opacity: 1;
-        }
-        100% {
-          transform: translateY(-100%);
-          opacity: 0;
-        }
-      }
-
       .item-single .row .column-6 {
         padding: 0;
       }
     </style>
 
-    <section class="section-gap" style="background-color: #f2f2f2;">
-      <div class="slideshow-container" style="padding: 2rem;">
+    <!-- Project Slider -->
+    <section class="section-gap project-slider">
+      <div class="slideshow-container" style="padding: 4rem">
         <div class="item-single">
           <div class="row">
             <div class="column-6 fade-up">
               <img src="./static/img/pencil.jpg" style="width: 100%" />
             </div>
-            <div class="column-6 fade-down" style="padding: 3rem;">
+            <div
+              class="column-6 fade-down"
+              style="
+                padding: 3rem;
+                background: rgba(255, 255, 255, 0.8);
+                color: #353b42;
+                border-radius: 15px;
+                margin-left: -60px;
+                margin-top: 60px;
+              "
+            >
               <h1>Some Title Here</h1>
               <p>
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit.
@@ -353,15 +324,22 @@
                 hic repudiandae numquam sapiente veniam debitis officia quia
                 necessitatibus. Ipsa, culpa ut?
               </p>
+              <a
+                href="#"
+                class="btn btn-sm btn-dark"
+                style="border-radius: 2em"
+              >
+                Visite The Website <i class="flaticon-navigation-1"></i>
+              </a>
             </div>
           </div>
         </div>
-        <div class="item-single move-in">
+        <div class="item-single">
           <div class="row">
-            <div class="column-6">
+            <div class="column-6 move-in">
               <img src="./static/img/pencil.jpg" style="width: 100%" />
             </div>
-            <div class="column-6" style="padding: 3rem;">
+            <div class="column-6 fade-up" style="padding: 3rem">
               <h1>Some Title Here</h1>
               <p>
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit.
@@ -369,22 +347,36 @@
                 hic repudiandae numquam sapiente veniam debitis officia quia
                 necessitatibus. Ipsa, culpa ut?
               </p>
+              <a
+                href="#"
+                class="btn btn-sm btn-dark"
+                style="border-radius: 2em"
+              >
+                Visite The Website <i class="flaticon-navigation-1"></i>
+              </a>
             </div>
           </div>
         </div>
-        <div class="item-single move-in">
+        <div class="item-single">
           <div class="row">
-            <div class="column-6">
+            <div class="column-6 move-in-left">
               <img src="./static/img/pencil.jpg" style="width: 100%" />
             </div>
-            <div class="column-6" style="padding: 3rem;">
-              <h1>Some Title Here</h1>
+            <div class="column-6 move-in" style="padding: 3rem">
+              <h1>&NewLine; Some Title Here</h1>
               <p>
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                 Officiis vel dolorem accusantium labore sint vitae eos saepe ut,
                 hic repudiandae numquam sapiente veniam debitis officia quia
                 necessitatibus. Ipsa, culpa ut?
               </p>
+              <a
+                href="#"
+                class="btn btn-sm btn-dark"
+                style="border-radius: 2em"
+              >
+                Visite The Website <i class="flaticon-navigation-1"></i>
+              </a>
             </div>
           </div>
         </div>
@@ -398,6 +390,7 @@
       </div>
     </section>
 
+    <!-- Wrapup area -->
     <section class="wrapup-area">
       <div class="wrapper">
         <div class="wrapup-wraper">
@@ -430,7 +423,7 @@
         display: none;
         position: fixed;
         width: 300px;
-        bottom: 3.7rem;
+        bottom: 2rem;
         right: 2rem;
         padding: 1rem 2rem;
         background-color: rgba(111, 66, 193, 0.9);
@@ -444,7 +437,7 @@
         animation-play-state: paused;
         transform-origin: bottom right;
       }
-      #message-box button {
+      .btn-xm {
         border: 1px solid #000;
         background-color: #000;
         border-radius: 2em;
@@ -452,25 +445,12 @@
         cursor: pointer;
         color: #fff;
       }
-      @keyframes messageAnim {
-        from {
-          transform: scale(0);
-        }
-        to {
-          transform: scale(1);
-        }
-      }
-      @keyframes messageCloseAnim {
-        from {
-          transform: scale(1);
-        }
-        to {
-          transform: scale(0);
-        }
-      }
       #message-box #close-btn {
         float: right;
         cursor: pointer;
+        background-color: transparent;
+        color: #fff;
+        border: none;
       }
       #message-box .chat-img {
         position: absolute;
@@ -480,216 +460,24 @@
       }
     </style>
 
+    <!-- Hello message -->
     <div id="message-box">
       <img
         class="chat-img"
         src="./static/img/positive-comment.svg"
         alt="Chat With Me"
       />
-      <div id="close-btn"><span class="flaticon-error"></span></div>
+      <button id="close-btn"><span class="flaticon-error"></span></button>
       <h1>Hello. I'm Here</h1>
       <h4>Seems like you reach at the end of the page.</h4>
       <p>
         I would like you to contact with me, because you will get more
         information about me
       </p>
-      <button>Contact me</button>
+      <a href="contact.html" class="btn-xm">Contact me</a>
     </div>
 
-    <!-- 
-    <div class="page-wrapper" id="portfolio">
-      <h1>portfolio</h1>
-      <h1>portfolio</h1>
-      <h1>portfolio</h1>
-    </div>
-    <div class="page-wrapper" id="contact">
-      <h1>Contact Me</h1>
-      <h1>Contact Me</h1>
-      <h1>Contact Me</h1>
-    </div> -->
-
-    <script>
-      document.addEventListener("DOMContentLoaded", function () {
-        /* *********** Dark Light *********** */
-        var darkLight = localStorage.getItem("dark");
-        var pinNavbar = localStorage.getItem("unpin");
-
-        const mainWrapper = document.getElementById("main-wrapper");
-        const darkLightTogglerBtn =
-          document.getElementById("dark-light-toggler");
-
-        mainWrapper.classList.add(darkLight);
-        document.getElementById("header-nav").classList.add(pinNavbar);
-        handleBtn();
-
-        darkLightTogglerBtn.addEventListener("click", function () {
-          mainWrapper.classList.toggle("dark");
-          if (mainWrapper.classList.contains("dark")) {
-            handleBtn();
-            localStorage.setItem("dark", "dark");
-          } else {
-            handleBtn();
-            localStorage.removeItem("dark");
-          }
-        });
-        /* *********** End Dark Light Mode ************ */
-
-        function handleBtn() {
-          const darkLightTogglerBtn =
-            document.getElementById("dark-light-toggler");
-          if (mainWrapper.classList.contains("dark")) {
-            darkLightTogglerBtn.innerHTML = "Light Mode";
-            darkLightTogglerBtn.classList.add("light");
-          } else {
-            darkLightTogglerBtn.innerHTML = "Dark Mode";
-            darkLightTogglerBtn.classList.remove("light");
-          }
-        }
-        /* *********** End Dark Light *********** */
-
-        /* *********** Header Nav *********** */
-        const bodySizeIndicator = document.getElementById(
-          "body-size-indicator"
-        );
-        const navEle = document.getElementById("header-nav");
-        const messageBox = document.getElementById("message-box");
-        const cvDownloadBtn = document.getElementById("cv-download-wrapper");
-
-        var msgViewed = false;
-
-        function indicateScrollBar() {
-          const winScroll =
-            document.body.scrollTop || document.documentElement.scrollTop;
-          const height =
-            document.documentElement.scrollHeight -
-            document.documentElement.clientHeight;
-          const scrolled = (winScroll / height) * 100;
-          bodySizeIndicator.style.width = `${scrolled}%`;
-        }
-
-        window.onscroll = () => {
-          indicateScrollBar();
-          window.addEventListener("scroll", () => indicateScrollBar());
-
-          if (scrollY > 100) {
-            navEle.classList.add("nav-light");
-          } else {
-            navEle.classList.remove("nav-light");
-          }
-
-          if (cvDownloadBtn.offsetTop - window.scrollY <= 50) {
-            cvDownloadBtn.classList.add("sticky");
-          } else {
-            cvDownloadBtn.classList.remove("sticky");
-          }
-
-          if (!msgViewed) {
-            if (
-              window.innerHeight + window.scrollY >=
-              document.body.offsetHeight - 200
-            ) {
-              messageBox.style.display = "block";
-              // messageBox.style.animation = "forwards messageAnim .5s ease-in-out";
-              messageBox.style.animationPlayState = "running";
-            }
-          }
-        };
-
-        // message box
-        var messageCloseBtn = document.getElementById("close-btn");
-        messageCloseBtn.addEventListener("click", function () {
-          msgViewed = true;
-          messageBox.style.animation =
-            "forwards messageCloseAnim .5s ease-in-out";
-          messageBox.addEventListener("animationend", function () {
-            messageBox.style.display = "none";
-          });
-        });
-
-        // Pinned
-        navpin = document.getElementById("nav-pin");
-        navpin.addEventListener("click", function () {
-          navEle.classList.toggle("unpin");
-          if (navEle.classList.contains("unpin")) {
-            navpin.attributes["title"] = "Pin navigation bar";
-            localStorage.setItem("unpin", "unpin");
-          } else {
-            navpin.attributes["title"] = "Unpin navigation bar";
-            localStorage.removeItem("unpin");
-          }
-        });
-        /* *********** End Header Nav *********** */
-
-        /* *********** Page Navigation *********** */
-        var menuLink = document.querySelectorAll(".menu-link");
-        var pages = document.querySelectorAll(".page-wrapper");
-
-        function displayPage(pageId) {
-          pages.forEach((page) => {
-            // page.style.animationPlayState = "running";
-            // page.addEventListener('animationend', function () {
-            //   page.style.display = "none";
-            // })
-            page.style.display = "none";
-          });
-        }
-        menuLink.forEach((item) => {
-          item.addEventListener("click", function () {
-            pageId = this.dataset.page;
-            displayPage(pageId);
-            document.getElementById(pageId).style.display = "block";
-          });
-        });
-        console.log(menuLink);
-        /* *********** End Page Navigation *********** */
-
-        /* *********** Slider ************ */
-        var slideIndex = 0;
-        showSlides();
-
-        // function showSlides() {
-        //   var i;
-        //   var slides = document.getElementsByClassName("item-single");
-        //   var dots = document.getElementsByClassName("dot");
-        //   for (i = 0; i < slides.length; i++) {
-        //     slides[i].classList.replace("move-in", "move-out");
-        //     // slides[i].style.animation = "forwards moveOut .5s ease-in-out";
-        //     slides[i].addEventListener("animationend", function () {
-        //       slides[i].style.display = "none";
-        //     })
-        //   }
-        //   slideIndex++;
-        //   if (slideIndex > slides.length) {
-        //     slideIndex = 1;
-        //   }
-        //   for (i = 0; i < dots.length; i++) {
-        //     dots[i].className = dots[i].className.replace(" active", "");
-        //   }
-        //   slides[slideIndex - 1].style.display = "block";
-        //   dots[slideIndex - 1].className += " active";
-        //   setTimeout(showSlides, 2000); // Change image every 2 seconds
-        // }
-
-        function showSlides() {
-          var i;
-          var slides = document.getElementsByClassName("item-single");
-          var dots = document.getElementsByClassName("dot");
-          for (i = 0; i < slides.length; i++) {
-            slides[i].style.display = "none";
-          }
-          slideIndex++;
-          if (slideIndex > slides.length) {
-            slideIndex = 1;
-          }
-          for (i = 0; i < dots.length; i++) {
-            dots[i].className = dots[i].className.replace(" active", "");
-          }
-          slides[slideIndex - 1].style.display = "block";
-          dots[slideIndex - 1].className += " active";
-          setTimeout(showSlides, 5000); // Change image every 2 seconds
-        }
-        /* ************* End Slider **************/
-      });
-    </script>
+    <!-- Script area -->
+    <script src="./static/js/main.js" type="text/javascript"></script>
   </body>
 </html>
