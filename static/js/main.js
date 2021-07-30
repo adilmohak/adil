@@ -5,10 +5,35 @@
 // })
 
 document.addEventListener("DOMContentLoaded", function () {
+  
   /* ****** Remove the preloader after the DOM fully loaded ***** */
   const preloader = document.querySelector(".preloader");
   preloader.style.animationPlayState = "running";
 
+  /* *************** Accessing user location **************** */
+  window.navigator.geolocation.getCurrentPosition(
+    function (res) {
+      console.log(res)
+    },
+    function (err) {
+      console.log(err)
+    }
+  );
+  /* ************* End user location access ************ */
+
+  /* ************ handle button click ************ */
+  var buttons = document.querySelectorAll('.btn');
+  buttons.forEach(btn => {
+    btn.addEventListener('click', function () {
+      var preText = btn.innerHTML
+      btn.innerHTML = "processing...";
+      setTimeout(() => {
+        btn.innerHTML = preText;
+      }, 2000);
+    })
+  })
+  /* ************ End handle button click ************ */
+  
   /* *********** Dark Light *********** */
   var darkLight = localStorage.getItem("dark");
   var pinNavbar = localStorage.getItem("unpin");
