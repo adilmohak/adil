@@ -1,11 +1,5 @@
-// document.addEventListener('load', function () {
-//   /* ****** Remove the preloader after the DOM fully loaded ***** */
-//   const preloader = document.querySelector('.preloader');
-//   preloader.style.animationPlayState = "running";
-// })
+window.onload = () => {
 
-document.addEventListener("DOMContentLoaded", function () {
-  
   /* ****** Remove the preloader after the DOM fully loaded ***** */
   const preloader = document.querySelector(".preloader");
   preloader.style.animationPlayState = "running";
@@ -199,4 +193,16 @@ document.addEventListener("DOMContentLoaded", function () {
     setTimeout(showSlides, 5000); // Change image every 2 seconds
   }
   /* ************* End Slider **************/
-});
+
+  /* ******** Accordion ******** */
+  const accordionTogglers = document.querySelectorAll('.accordion-toggler');
+  accordionTogglers.forEach(btn => {
+    btn.addEventListener('click', function () {
+      const activeAcc = document.querySelector('.accordion.active');
+      activeAcc.classList.remove('active');
+      btn.parentElement.classList.toggle('active');
+    })
+  })
+  // accordion.children[1].style.display = "block"
+  /* ******** End Accordion ******** */
+}

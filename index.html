@@ -1,586 +1,804 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="This is the Description" />
-    <meta
-      name="keywords"
-      content="Website, Web design, Web development, Content writer, Data science"
-    />
 
-    <title>Adil Mohak</title>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="This is the Description" />
+  <meta name="keywords" content="Website, Web design, Web development, Content writer, Data science" />
+  <meta name="author" content="Adil Mohammed" />
+  <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
 
-    <link rel="apple-touch-icon" href="favicon.png" />
+  <title>Adil Mohak</title>
 
-    <!-- Google Rubik font -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap"
-      rel="stylesheet"
-    />
+  <link rel="apple-touch-icon" href="favicon.png" />
 
-    <!-- Icons plugin -->
-    <link rel="stylesheet" href="./static/font-essential-set/flaticon.css" />
+  <!-- Google Rubik font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap" rel="stylesheet" />
 
-    <link rel="stylesheet" href="./static/css/style.css" />
-    <link rel="stylesheet" href="./static/css/animations.css" />
-  </head>
+  <!-- Icons plugin -->
+  <link rel="stylesheet" href="./static/font-flaticon/flaticon.css" />
+  <!-- <link rel="stylesheet" href="./static/font-flaticon/font/flaticon.css" /> -->
 
-  <body id="main-wrapper">
-    <!-- Preloader -->
-    <div class="preloader">
-      <img src="./static/img/3D-snake.gif" alt="" />
+  <link rel="stylesheet" href="./static/css/style.css" />
+  <link rel="stylesheet" href="./static/css/animations.css" />
+</head>
+
+<body id="main-wrapper">
+  <!-- Preloader -->
+  <div class="preloader">
+    <!-- <img src="./static/img/3D-snake.gif" alt="" /> -->
+    <div class="sk-chase">
+      <div class="sk-chase-dot"></div>
+      <div class="sk-chase-dot"></div>
+      <div class="sk-chase-dot"></div>
+      <div class="sk-chase-dot"></div>
+      <div class="sk-chase-dot"></div>
+      <div class="sk-chase-dot"></div>
     </div>
-    <!-- End Preloader -->
+  </div>
+  <!-- End Preloader -->
 
-    <div id="body-size-indicator"></div>
+  <div id="body-size-indicator"></div>
 
-    <!-- Header navbar -->
-    <header id="header-nav">
-      <nav>
-        <a href="index.html" class="leader">adil.</a>
-        <ul class="menu-list">
-          <li>
-            <a href="index.html" class="menu-link active" data-page="home"
-              >Home</a
-            >
-          </li>
-          <li>
-            <a href="portfolio.html" class="menu-link" data-page="portfolio"
-              >My Portfolios</a
-            >
-          </li>
-          <li>
-            <a href="bymecoffee.html" class="menu-link" data-page="bymecoffee"
-              >&heartsuit; By Me Coffee</a
-            >
-          </li>
-          <li>
-            <a href="contact.html" class="menu-link" data-page="contact"
-              >Contact</a
-            >
-          </li>
-          <div class="setting-list">
-            <button id="dark-light-toggler" title="Change to dark mode">
-              Dark Mode
-            </button>
-            <button id="nav-pin" title="Unpin navigation bar">
-              <span class="flaticon-push-pin"></span>
-            </button>
-          </div>
-        </ul>
-      </nav>
-    </header>
-
-    <!-- Banner -->
-    <div class="hero">
-      <div
-        class="wrapper"
-        style="display: flex; justify-content: space-between"
-      >
-        <div class="content-hero" style="position: relative">
-          <h1>Lorem ipsum dolor sit amet consectetur adipisicing</h1>
-          <p>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Omnis
-            fugit beatae rerum recusandae maiores quis accusantium, sapiente
-            ipsum quam similique possimus placeat, quo, iste assumenda
-            consectetur minus quaerat consequatur autem.
-          </p>
-          <div class="btn-group">
-            <a href="contact.html" class="btn btn-orange">Want a Developer</a>
-            <a href="portfolio.html" class="btn btn-outline-light">Explor My Projects</a>
-          </div>
+  <!-- Header navbar -->
+  <header id="header-nav">
+    <nav>
+      <a href="index.html" class="leader">adil.</a>
+      <ul class="menu-list">
+        <li>
+          <a href="index.html" class="menu-link active" data-page="home">Home</a>
+        </li>
+        <li>
+          <a href="portfolio.html" class="menu-link" data-page="portfolio">My Portfolios</a>
+        </li>
+        <li>
+          <a href="bymecoffee.html" class="menu-link" data-page="bymecoffee">&heartsuit; By Me Coffee</a>
+        </li>
+        <li>
+          <a href="contact.html" class="menu-link" data-page="contact">Contact</a>
+        </li>
+        <div class="setting-list">
+          <button id="dark-light-toggler" title="Change to dark mode">
+            Dark Mode
+          </button>
+          <button id="nav-pin" title="Unpin navigation bar">
+            <span class="flaticon-push-pin"></span>
+          </button>
         </div>
-        <div class="content-right">
-          <h1 class="hero-intro-title">
-            LOOKING <br />
-            FOR <br />
-            WEB <br />
-            DEVELOPER?
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Banner -->
+  <div class="hero">
+    <div class="wrapper" style="display: flex; justify-content: space-between">
+      <div class="content-hero" style="position: relative">
+        <h1>Lorem ipsum dolor sit amet consectetur adipisicing</h1>
+        <p>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Omnis
+          fugit beatae rerum recusandae maiores quis accusantium, sapiente
+          ipsum quam similique possimus placeat, quo, iste assumenda
+          consectetur minus quaerat consequatur autem.
+        </p>
+        <div class="btn-group">
+          <a href="contact.html" class="btn btn-orange">Want a Developer</a>
+          <a href="portfolio.html" class="btn btn-outline-light">Explor My Projects</a>
+        </div>
+      </div>
+      <div class="content-right">
+        <h1 class="hero-intro-title">
+          LOOKING <br />
+          FOR <br />
+          WEB <br />
+          DEVELOPER?
+        </h1>
+      </div>
+    </div>
+  </div>
+
+  <!-- Intro area -->
+  <section class="intro-area section-gap" style="padding-bottom: 0">
+    <div class="wrapper">
+      <div class="row">
+        <div class="column-6" style="padding-bottom: 0">
+          <img width="80%" src="./static/img/avater-3.png" style="margin-bottom: -20px" alt="" />
+        </div>
+        <div class="column-6">
+          <h1 style="font-size: 5vw">
+            Websites <br />
+            Gone <span style="color: #6f42c1"> Right </span>
           </h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit
+            quae ipsum sed eveniet? Dolores, labore? Quaerat natus
+            exercitationem, corrupti saepe pariatur quidem incidunt laboriosam
+            maiores sit amet est. Ex, sequi.
+          </p>
+          <div class="btn-wrapper" id="cv-download-wrapper">
+            <a href="./static/files/CV_2021_Adil_Mohammed.pdf" download="CV_2021_Adil_Mohammed_Developer.pdf"
+              class="btn btn-orange"><span class="icon-sm flaticon-resume"></span> Download My CV</a>
+            <button class="btn btn-dark cv-preview-btn">
+              <span class="icon-sm flaticon-file-2"></span> See The Preview
+            </button>
+
+            <div class="content">
+              <button id="sticky-close-btn">
+                <span class="flaticon-error"></span>
+              </button>
+              <small>Download my CV to know more about me</small>
+            </div>
+          </div>
+
+          <div class="modal">
+            <div class="cv-preview">
+              <span class="icon-md flaticon-error modal-close"></span>
+              <iframe src="./static/files/CV_2021_Adil_Mohammed.pdf" width="500px" height="500px">
+              </iframe>
+            </div>
+          </div>
         </div>
       </div>
     </div>
+  </section>
 
-    <!-- Intro area -->
-    <section class="intro-area section-gap" style="padding-bottom: 0">
-      <div class="wrapper">
-        <div class="row">
-          <div class="column-6" style="padding-bottom: 0">
-            <img
-              width="80%"
-              src="./static/img/avater-3.png"
-              style="margin-bottom: -20px"
-              alt=""
-            />
-          </div>
-          <div class="column-6">
-            <h1 style="font-size: 5vw">
-              Web Design <br />
-              Gone <span style="color: #6f42c1"> Right </span>
-            </h1>
+  <!-- Service area -->
+  <section class="section-gap service-area dark-bg">
+    <div class="wrapper">
+      <div class="section-header">
+        <h1>Services</h1>
+        <p class="lead">The services I provide</p>
+      </div>
+      <br /><br />
+      <div class="row" style="position: relative">
+        <div class="column-6">
+          <div class="service-single">
+            <span class="icon-x-lg flaticon-television"></span>
+            <h1>WEB DESIGN</h1>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit
-              quae ipsum sed eveniet? Dolores, labore? Quaerat natus
-              exercitationem, corrupti saepe pariatur quidem incidunt laboriosam
-              maiores sit amet est. Ex, sequi.
+              Creates the look, layout, and features of a website. Plan,
+              create and code internet sites and web pages. Combine text with
+              sounds, pictures, graphics and video clips. Dynamic and
+              Responsive Design.
             </p>
-            <div class="btn-wrapper" id="cv-download-wrapper">
-              <a href="./static/files/CV_2021_Adil_Mohammed.pdf" download="CV_2021_Adil_Mohammed_Developer.pdf" class="btn btn-orange"
-                ><span class="icon-sm flaticon-resume"></span> Download My CV</a
-              >
-              <button class="btn btn-dark cv-preview-btn">
-                <span class="icon-sm flaticon-file-2"></span> See The Preview
-              </button>
-
-              <div class="content">
-                <button id="sticky-close-btn">
-                  <span class="flaticon-error"></span>
-                </button>
-                <small>Download my CV to know more about me</small>
-              </div>
-            </div>
-
-            <div class="modal">
-              <div class="cv-preview">
-                <span class="icon-md flaticon-error modal-close"></span>
-                <iframe
-                  src="./static/files/CV_2021_Adil_Mohammed.pdf"
-                  width="500px"
-                  height="500px"
-                >
-                </iframe>
-              </div>
-            </div>
+          </div>
+        </div>
+        <div class="column-6">
+          <div class="service-single">
+            <span class="icon-x-lg flaticon-more-2"></span>
+            <h1>WEB DEVELOPMENT</h1>
+            <p>
+              Building, creating, and maintaining websites. It includes
+              aspects such as web design, web publishing, web programming, and
+              database management. We build a websites with a high security
+              and scalablity
+            </p>
+          </div>
+        </div>
+        <div class="column-6">
+          <div class="service-single">
+            <span class="icon-x-lg flaticon-notepad-2"></span>
+            <h1>Content Writer</h1>
+            <p>
+              The lighting, the composition, the subject, and everything else
+              work together harmoniously to convey the right vision or
+              message. Portrait Photography, Photojournalism, Fashion
+              Photography, Sports Photography, Still Life Photography,
+              Editorial Photography, Architectural Photography...
+            </p>
           </div>
         </div>
       </div>
-    </section>
+      <div class="row">
+        <div class="column-6">
+          <div class="service-single">
+            <span class="icon-x-lg flaticon-database"></span>
+            <h1>Data Analysis With Python</h1>
+            <p></p>
+          </div>
+        </div>
+        <div class="column-6">
+          <div class="service-single">
+            <span class="icon-x-lg flaticon-smartphone-2"></span>
+            <h1>RESPONSIVE DESIGN</h1>
+            <p>
+              We creates dynamic changes to the appearance of a website,
+              depending on the screen size and orientation of the device being
+              used to view it. In responsive design, page elements reshuffle
+              as the viewport grows or shrinks.
+            </p>
+          </div>
+        </div>
+        <div class="column-6">
+          <div class="service-single">
+            <span class="icon-x-lg flaticon-windows-3"></span>
+            <h1>GRAPHIC DESIGN</h1>
+            <p>
+              We create visual concepts, to communicate ideas that inspire,
+              inform, and captivate consumers. We develop the overall layout
+              and production design for applications such as advertisements,
+              brochures, magazines, reports and so on...
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
-    <!-- Service area -->
-    <section class="section-gap service-area dark-bg">
-      <div class="wrapper">
-        <div class="section-header">
-          <h1>Services</h1>
-          <p>The services I provide</p>
-        </div>
-        <div class="row" style="position: relative">
-          <div class="column-6">
-            <div class="service-single">
-              <span class="icon-x-lg flaticon-television"></span>
-              <h1>WEB DESIGN</h1>
-              <p>
-                Creates the look, layout, and features of a website. Plan,
-                create and code internet sites and web pages. Combine text with
-                sounds, pictures, graphics and video clips. Dynamic and
-                Responsive Design.
-              </p>
-            </div>
-          </div>
-          <div class="column-6">
-            <div class="service-single">
-              <span class="icon-x-lg flaticon-more-2"></span>
-              <h1>WEB DEVELOPMENT</h1>
-              <p>
-                Building, creating, and maintaining websites. It includes
-                aspects such as web design, web publishing, web programming, and
-                database management. We build a websites with a high security
-                and scalablity
-              </p>
-            </div>
-          </div>
-          <div class="column-6">
-            <div class="service-single">
-              <span class="icon-x-lg flaticon-notepad-2"></span>
-              <h1>Content Writer</h1>
-              <p>
-                The lighting, the composition, the subject, and everything else
-                work together harmoniously to convey the right vision or
-                message. Portrait Photography, Photojournalism, Fashion
-                Photography, Sports Photography, Still Life Photography,
-                Editorial Photography, Architectural Photography...
-              </p>
-            </div>
-          </div>
-        </div>
+  <style>
+    .item-single {
+      display: none;
+    }
+
+    /* img {vertical-align: middle;} */
+
+    /* Slideshow container */
+    .slideshow-container {
+      position: relative;
+      width: 90%;
+      max-width: 1000px;
+      border-radius: 0 0 15px 15px;
+      margin: 0 auto;
+      overflow: hidden;
+    }
+
+    .slideshow-container img {
+      vertical-align: middle;
+      width: 60%;
+      max-width: 500px;
+      border-radius: 5px;
+      box-shadow: -1px 3px 32px -3px rgba(0, 0, 0, 0.2);
+      -webkit-box-shadow: -1px 3px 32px -3px rgba(0, 0, 0, 0.2);
+      -moz-box-shadow: -1px 3px 32px -3px rgba(0, 0, 0, 0.2);
+    }
+
+    /* Caption text */
+    .slideshow-container .text {
+      color: #f2f2f2;
+      font-size: 15px;
+      padding: 8px 12px;
+      position: absolute;
+      bottom: 8px;
+      width: 100%;
+      text-align: center;
+    }
+
+    /* The dots/bullets/indicators */
+    .slideshow-container .dot {
+      height: 15px;
+      width: 15px;
+      margin: 0 2px;
+      background-color: #bbb;
+      border-radius: 50%;
+      display: inline-block;
+      transition: background-color 0.6s ease;
+    }
+
+    .slideshow-container .active {
+      background-color: #717171;
+    }
+
+    .item-single .row .column-6 {
+      padding: 0;
+    }
+  </style>
+
+  <!-- Project Slider -->
+  <section class="section-gap project-slider">
+    <div class="slideshow-container" style="padding: 4rem">
+      <div class="item-single">
         <div class="row">
-          <div class="column-6">
-            <div class="service-single">
-              <span class="icon-x-lg flaticon-database"></span>
-              <h1>Data Analysis With Python</h1>
-              <p></p>
-            </div>
+          <div class="column-6 fade-up">
+            <img src="./static/img/pencil.jpg" style="width: 100%" />
           </div>
-          <div class="column-6">
-            <div class="service-single">
-              <span class="icon-x-lg flaticon-smartphone-2"></span>
-              <h1>RESPONSIVE DESIGN</h1>
-              <p>
-                We creates dynamic changes to the appearance of a website,
-                depending on the screen size and orientation of the device being
-                used to view it. In responsive design, page elements reshuffle
-                as the viewport grows or shrinks.
-              </p>
-            </div>
-          </div>
-          <div class="column-6">
-            <div class="service-single">
-              <span class="icon-x-lg flaticon-windows-3"></span>
-              <h1>GRAPHIC DESIGN</h1>
-              <p>
-                We create visual concepts, to communicate ideas that inspire,
-                inform, and captivate consumers. We develop the overall layout
-                and production design for applications such as advertisements,
-                brochures, magazines, reports and so on...
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <style>
-      .item-single {
-        display: none;
-      }
-      /* img {vertical-align: middle;} */
-
-      /* Slideshow container */
-      .slideshow-container {
-        position: relative;
-        width: 90%;
-        max-width: 1000px;
-        border-radius: 0 0 15px 15px;
-        margin: 0 auto;
-        overflow: hidden;
-      }
-      .slideshow-container img {
-        vertical-align: middle;
-        width: 60%;
-        max-width: 500px;
-        border-radius: 5px;
-        box-shadow: -1px 3px 32px -3px rgba(0, 0, 0, 0.2);
-        -webkit-box-shadow: -1px 3px 32px -3px rgba(0, 0, 0, 0.2);
-        -moz-box-shadow: -1px 3px 32px -3px rgba(0, 0, 0, 0.2);
-      }
-
-      /* Caption text */
-      .slideshow-container .text {
-        color: #f2f2f2;
-        font-size: 15px;
-        padding: 8px 12px;
-        position: absolute;
-        bottom: 8px;
-        width: 100%;
-        text-align: center;
-      }
-
-      /* The dots/bullets/indicators */
-      .slideshow-container .dot {
-        height: 15px;
-        width: 15px;
-        margin: 0 2px;
-        background-color: #bbb;
-        border-radius: 50%;
-        display: inline-block;
-        transition: background-color 0.6s ease;
-      }
-
-      .slideshow-container .active {
-        background-color: #717171;
-      }
-
-      .item-single .row .column-6 {
-        padding: 0;
-      }
-    </style>
-
-    <!-- Project Slider -->
-    <section class="section-gap project-slider">
-      <div class="slideshow-container" style="padding: 4rem">
-        <div class="item-single">
-          <div class="row">
-            <div class="column-6 fade-up">
-              <img src="./static/img/pencil.jpg" style="width: 100%" />
-            </div>
-            <div
-              class="column-6 fade-down"
-              style="
+          <div class="column-6 fade-down" style="
                 padding: 3rem;
                 background: rgba(255, 255, 255, 0.8);
                 color: #353b42;
                 border-radius: 15px;
                 margin-left: -60px;
                 margin-top: 60px;
-              "
-            >
-              <h1>Some Title Here</h1>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                Officiis vel dolorem accusantium labore sint vitae eos saepe ut,
-                hic repudiandae numquam sapiente veniam debitis officia quia
-                necessitatibus. Ipsa, culpa ut?
-              </p>
-              <a
-                href="#"
-                class="btn btn-sm btn-dark"
-                style="border-radius: 2em"
-              >
-                Visite The Website <i class="flaticon-navigation-1"></i>
-              </a>
-            </div>
-          </div>
-        </div>
-        <div class="item-single">
-          <div class="row">
-            <div class="column-6 move-in">
-              <img src="./static/img/pencil.jpg" style="width: 100%" />
-            </div>
-            <div class="column-6 fade-up" style="padding: 3rem">
-              <h1>Some Title Here</h1>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                Officiis vel dolorem accusantium labore sint vitae eos saepe ut,
-                hic repudiandae numquam sapiente veniam debitis officia quia
-                necessitatibus. Ipsa, culpa ut?
-              </p>
-              <a
-                href="#"
-                class="btn btn-sm btn-dark"
-                style="border-radius: 2em"
-              >
-                Visite The Website <i class="flaticon-navigation-1"></i>
-              </a>
-            </div>
-          </div>
-        </div>
-        <div class="item-single">
-          <div class="row">
-            <div class="column-6 move-in-left">
-              <img src="./static/img/pencil.jpg" style="width: 100%" />
-            </div>
-            <div class="column-6 move-in" style="padding: 3rem">
-              <h1>&NewLine; Some Title Here</h1>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                Officiis vel dolorem accusantium labore sint vitae eos saepe ut,
-                hic repudiandae numquam sapiente veniam debitis officia quia
-                necessitatibus. Ipsa, culpa ut?
-              </p>
-              <a
-                href="#"
-                class="btn btn-sm btn-dark"
-                style="border-radius: 2em"
-              >
-                Visite The Website <i class="flaticon-navigation-1"></i>
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
-      <br />
-
-      <div style="text-align: center">
-        <span class="dot"></span>
-        <span class="dot"></span>
-        <span class="dot"></span>
-      </div>
-    </section>
-
-    <!-- Project area -->
-    <section class="section-gap project-area section-slanted">
-      <div class="wrapper">
-        <div class="row">
-          <div class="column-6">
-            <div class="project-single">
-              <div class="counter">1</div>
-              <h2>Student Management & E-learning System</h2>
-              <p>
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                Numquam similique minima quidem itaque veniam repellat
-                recusandae, eveniet blanditiis, impedit in animi repudiandae rem
-                minus id dolor autem mollitia tenetur alias.
-              </p>
-              <p class="quote small-text">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum,
-                voluptatibus molestias voluptatem consectetur incidunt, maxime,
-                inventore quisquam quo explicabo quis voluptas quibusdam.
-                Nesciunt illum temporibus porro fugiat ab? Explicabo, ducimus.
-              </p>
-            </div>
-          </div>
-          <div class="column-6">
-            <div class="project-single active">
-              <div class="counter">2</div>
-              <h2>Student Management & E-learning System</h2>
-              <p>
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                Numquam similique minima quidem itaque veniam repellat
-                recusandae, eveniet blanditiis, impedit in animi repudiandae rem
-                minus id dolor autem mollitia tenetur alias.
-              </p>
-              <p class="quote small-text">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum,
-                voluptatibus molestias voluptatem consectetur incidunt, maxime,
-                inventore quisquam quo explicabo quis voluptas quibusdam.
-                Nesciunt illum temporibus porro fugiat ab? Explicabo, ducimus.
-              </p>
-            </div>
-          </div>
-          <div class="column-6">
-            <div class="project-single">
-              <div class="counter">3</div>
-              <h2>Student Management & E-learning System</h2>
-              <p>
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                Numquam similique minima quidem itaque veniam repellat
-                recusandae, eveniet blanditiis, impedit in animi repudiandae rem
-                minus id dolor autem mollitia tenetur alias.
-              </p>
-              <p class="quote small-text">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum,
-                voluptatibus molestias voluptatem consectetur incidunt, maxime,
-                inventore quisquam quo explicabo quis voluptas quibusdam.
-                Nesciunt illum temporibus porro fugiat ab? Explicabo, ducimus.
-              </p>
-            </div>
-          </div>
-        </div>
-
-        <a href="portfolio.html" class="btn btn-orange" style="margin: 3rem"
-          >Explore More Projects</a
-        >
-      </div>
-    </section>
-
-    <!-- Wrapup area -->
-    <section class="wrapup-area">
-      <div class="wrapper">
-        <div class="wrapup-wraper">
-          <div class="wrapup-left" style="padding: 2rem">
-            <h1>Lorem ipsum dolor sit amet</h1>
+              ">
+            <h1>Some Title Here</h1>
             <p>
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Qui,
-              deleniti. Inventore sequi, ipsum aperiam deleniti culpa fuga,
-              voluptatum natus labore placeat numquam laborum totam veritatis
-              quam voluptates quod adipisci et.
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              Officiis vel dolorem accusantium labore sint vitae eos saepe ut,
+              hic repudiandae numquam sapiente veniam debitis officia quia
+              necessitatibus. Ipsa, culpa ut?
+            </p>
+            <a href="#" class="btn btn-sm btn-dark" style="border-radius: 2em">
+              Visite The Website <i class="flaticon-navigation-1"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="item-single">
+        <div class="row">
+          <div class="column-6 move-in">
+            <img src="./static/img/pencil.jpg" style="width: 100%" />
+          </div>
+          <div class="column-6 fade-up" style="padding: 3rem">
+            <h1>Some Title Here</h1>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              Officiis vel dolorem accusantium labore sint vitae eos saepe ut,
+              hic repudiandae numquam sapiente veniam debitis officia quia
+              necessitatibus. Ipsa, culpa ut?
+            </p>
+            <a href="#" class="btn btn-sm btn-dark" style="border-radius: 2em">
+              Visite The Website <i class="flaticon-navigation-1"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="item-single">
+        <div class="row">
+          <div class="column-6 move-in-left">
+            <img src="./static/img/pencil.jpg" style="width: 100%" />
+          </div>
+          <div class="column-6 move-in" style="padding: 3rem">
+            <h1>&NewLine; Some Title Here</h1>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              Officiis vel dolorem accusantium labore sint vitae eos saepe ut,
+              hic repudiandae numquam sapiente veniam debitis officia quia
+              necessitatibus. Ipsa, culpa ut?
+            </p>
+            <a href="#" class="btn btn-sm btn-dark" style="border-radius: 2em">
+              Visite The Website <i class="flaticon-navigation-1"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <br />
+
+    <div style="text-align: center">
+      <span class="dot"></span>
+      <span class="dot"></span>
+      <span class="dot"></span>
+    </div>
+  </section>
+
+  <!-- Project area -->
+  <section class="section-gap project-area section-slanted">
+    <div class="wrapper">
+      <div class="section-header">
+        <h1>Projects</h1>
+        <p class="lead">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. At
+          perferendis fugit, corporis tempore adipisci placeat sed, cum
+          cumque, fuga enim itaque impedit veniam doloribus incidunt eos porro
+          officiis. Eius, magnam.
+        </p>
+      </div>
+      <div class="row">
+        <div class="column-6">
+          <div class="project-single">
+            <div class="counter">1</div>
+            <h2>Student Management & E-learning System</h2>
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+              Numquam similique minima quidem itaque veniam repellat
+              recusandae, eveniet blanditiis, impedit in animi repudiandae rem
+              minus id dolor autem mollitia tenetur alias.
+            </p>
+            <p class="quote small-text">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum,
+              voluptatibus molestias voluptatem consectetur incidunt, maxime,
+              inventore quisquam quo explicabo quis voluptas quibusdam.
+              Nesciunt illum temporibus porro fugiat ab? Explicabo, ducimus.
             </p>
           </div>
-          <div class="wrapup-right dark-bg" style="padding: 2rem">
-            <div style="position: relative">
-              <h1 class="text-lg">
-                Lorem ipsum <br />
-                dolor sit amet
-              </h1>
-              <a href="#" class="btn btn-orange">Want a Developer</a>
-            </div>
+        </div>
+        <div class="column-6">
+          <div class="project-single active">
+            <div class="counter">2</div>
+            <h2>Student Management & E-learning System</h2>
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+              Numquam similique minima quidem itaque veniam repellat
+              recusandae, eveniet blanditiis, impedit in animi repudiandae rem
+              minus id dolor autem mollitia tenetur alias.
+            </p>
+            <p class="quote small-text">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum,
+              voluptatibus molestias voluptatem consectetur incidunt, maxime,
+              inventore quisquam quo explicabo quis voluptas quibusdam.
+              Nesciunt illum temporibus porro fugiat ab? Explicabo, ducimus.
+            </p>
+          </div>
+        </div>
+        <div class="column-6">
+          <div class="project-single">
+            <div class="counter">3</div>
+            <h2>Student Management & E-learning System</h2>
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+              Numquam similique minima quidem itaque veniam repellat
+              recusandae, eveniet blanditiis, impedit in animi repudiandae rem
+              minus id dolor autem mollitia tenetur alias.
+            </p>
+            <p class="quote small-text">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum,
+              voluptatibus molestias voluptatem consectetur incidunt, maxime,
+              inventore quisquam quo explicabo quis voluptas quibusdam.
+              Nesciunt illum temporibus porro fugiat ab? Explicabo, ducimus.
+            </p>
           </div>
         </div>
       </div>
-    </section>
 
-    <section class="section-free-gap dark-bg"></section>
-
-    <style>
-      #message-box {
-        display: none;
-        position: fixed;
-        width: 300px;
-        bottom: 2rem;
-        right: 2rem;
-        padding: 1rem 2rem;
-        background-color: rgba(111, 66, 193, 0.9);
-        border-radius: 10px;
-        color: #fff;
-        transform: scale(0);
-        animation-fill-mode: forwards;
-        animation-duration: 0.5s;
-        animation-name: messageAnim;
-        animation-timing-function: ease-in-out;
-        animation-play-state: paused;
-        transform-origin: bottom right;
-      }
-      .btn-xm {
-        border: 1px solid #000;
-        background-color: #000;
-        border-radius: 2em;
-        padding: 0.5rem 2rem;
-        cursor: pointer;
-        color: #fff;
-      }
-      #message-box #close-btn {
-        float: right;
-        cursor: pointer;
-        background-color: transparent;
-        color: #fff;
-        border: none;
-      }
-      #message-box .chat-img {
-        position: absolute;
-        width: 80px;
-        top: -30px;
-        left: -30px;
-      }
-    </style>
-
-    <!-- Hello message -->
-    <div id="message-box">
-      <img
-        class="chat-img"
-        src="./static/img/positive-comment.svg"
-        alt="Chat With Me"
-      />
-      <button id="close-btn"><span class="flaticon-error"></span></button>
-      <h1>Hello. I'm Here</h1>
-      <h4>
-        Now, I think you got an idea why you should 
-        choose me for your next business.
-      </h4>
-      <p>
-        Simply contact me and I will respond as soon as possible.
-      </p>
-      <a href="contact.html" class="btn-xm">Contact me</a>
+      <a href="portfolio.html" class="btn btn-orange" style="margin: 3rem">Explore More Projects</a>
     </div>
+  </section>
 
-    <!-- Footer area -->
-    <footer>
-      <div class="wrapper">
-        <div class="d-flex">
-          <p class="about">
-            <small>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero id
-              saepe necessitatibus quisquam facere illum cumque, cum
-              perspiciatis ea? Reiciendis ipsum amet dolore expedita
-              necessitatibus optio dolor dolorum odio omnis!
-            </small>
+  <!-- Blog Posts -->
+  <section class="blog-area section-gap">
+    <div class="wrapper">
+      <div class="section-header">
+        <h1>Blog Posts</h1>
+        <p class="lead">
+          I write some important concepts mostly about back-end & front-end
+          development, python / django, new technologies, HTML, CSS and JS.
+        </p>
+      </div>
+      <div id="blog-wrap">
+      <a href="#">
+        <div class="blog-single">
+          <h5><span class="flaticon-user-6"></span> Adil Mohammed</h5>
+          <h2>Why Python is My Favorite Programming language?</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt
+            assumenda blanditiis, nam excepturi impedit quidem dicta,
+            perferendis id repellat officiis nesciunt maiores pariatur harum?
+            Quisquam aut suscipit vel autem sed.
           </p>
-          <div class="social-menu-list">
-            <div class="social-single">
-              <img src="./static/img/logos/linkedin.svg" alt="" />
-              <p>Connet me on Linkedin</p>
-            </div>
-            <div class="social-single">
-              <img src="./static/img/logos/facebook.svg" alt="" />
-              <p>Connet me on Facebook</p>
-            </div>
-            <div class="social-single">
-              <img src="./static/img/logos/whatsapp.svg" alt="" />
-              <p>Connet me on Whatsapp</p>
-            </div>
-            <div class="social-single">
-              <img src="./static/img/logos/telegram.svg" alt="" />
-              <p>Connet me on Telegram</p>
-            </div>
+          <h5><span class="flaticon-calendar-2"></span> Jun 21, 2021</h5>
+          <div class="likes-wrap">
+            <span class="flaticon-like"></span> 126 likes <br />
+            <span class="flaticon-more-2"></span> 43 Comments
+          </div>
+        </div>
+      </a>
+      <a href="#">
+        <div class="blog-single">
+          <h5><span class="flaticon-user-6"></span> Adil Mohammed</h5>
+          <h2>Why Python is My Favorite Programming language?</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt
+            assumenda blanditiis, nam excepturi impedit quidem dicta,
+            perferendis id repellat officiis nesciunt maiores pariatur harum?
+            Quisquam aut suscipit vel autem sed.
+          </p>
+          <h5><span class="flaticon-calendar-2"></span> Jun 21, 2021</h5>
+          <div class="likes-wrap">
+            <span class="flaticon-like"></span> 126 likes <br />
+            <span class="flaticon-more-2"></span> 43 Comments
+          </div>
+        </div>
+      </a>
+      <a href="#">
+        <div class="blog-single">
+          <h5><span class="flaticon-user-6"></span> Adil Mohammed</h5>
+          <h2>Why Python is My Favorite Programming language?</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt
+            assumenda blanditiis, nam excepturi impedit quidem dicta,
+            perferendis id repellat officiis nesciunt maiores pariatur harum?
+            Quisquam aut suscipit vel autem sed.
+          </p>
+          <h5><span class="flaticon-calendar-2"></span> Jun 21, 2021</h5>
+          <div class="likes-wrap">
+            <span class="flaticon-like"></span> 126 likes <br />
+            <span class="flaticon-more-2"></span> 43 Comments
+          </div>
+        </div>
+      </a>
+      <a href="#">
+        <div class="blog-single">
+          <h5><span class="flaticon-user-6"></span> Adil Mohammed</h5>
+          <h2>Why Python is My Favorite Programming language?</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt
+            assumenda blanditiis, nam excepturi impedit quidem dicta,
+            perferendis id repellat officiis nesciunt maiores pariatur harum?
+            Quisquam aut suscipit vel autem sed.
+          </p>
+          <h5><span class="flaticon-calendar-2"></span> Jun 21, 2021</h5>
+          <div class="likes-wrap">
+            <span class="flaticon-like"></span> 126 likes <br />
+            <span class="flaticon-more-2"></span> 43 Comments
+          </div>
+        </div>
+      </a>
+    </div>
+      <center>
+        <button class="btn btn-orange blog-loader">&looparrowright; Load More</button>
+      </center>
+    </div>
+  </section>
+
+  <!-- FAQ area -->
+  <section class="faq-area section-gap">
+    <div class="wrapper">
+      <div class="section-header">
+        <h1>FAQ</h1>
+        <p class="lead">
+          <b>Frequantly Asked Questions: </b> Most common questions that my customers asked me before I start
+          working of them.
+        </p>
+      </div>
+      <div class="accordion active">
+        <button class="accordion-toggler">
+          How much time do you need to build something like an intermidiat
+          website?
+        </button>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident,
+          doloremque facilis maiores pariatur dolorem repellendus a enim,
+          voluptatibus ratione, rem nulla temporibus nisi sequi est dolores
+          ipsum. Ab, cupiditate nemo.
+        </p>
+      </div>
+      <div class="accordion">
+        <button class="accordion-toggler">
+          How much time do you need to build something like an intermidiat
+          website?
+        </button>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident,
+          doloremque facilis maiores pariatur dolorem repellendus a enim,
+          voluptatibus ratione, rem nulla temporibus nisi sequi est dolores
+          ipsum. Ab, cupiditate nemo.
+        </p>
+      </div>
+      <div class="accordion">
+        <button class="accordion-toggler">
+          How much time do you need to build something like an intermidiat
+          website?
+        </button>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident,
+          doloremque facilis maiores pariatur dolorem repellendus a enim,
+          voluptatibus ratione, rem nulla temporibus nisi sequi est dolores
+          ipsum. Ab, cupiditate nemo.
+        </p>
+      </div>
+      <div class="accordion">
+        <button class="accordion-toggler">
+          How much time do you need to build something like an intermidiat
+          website?
+        </button>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident,
+          doloremque facilis maiores pariatur dolorem repellendus a enim,
+          voluptatibus ratione, rem nulla temporibus nisi sequi est dolores
+          ipsum. Ab, cupiditate nemo.
+        </p>
+      </div>
+      <div class="accordion">
+        <button class="accordion-toggler">
+          Can I know what technology do you use to build this website?
+        </button>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident,
+          doloremque facilis maiores pariatur dolorem repellendus a enim,
+          voluptatibus ratione, rem nulla temporibus nisi sequi est dolores
+          ipsum. Ab, cupiditate nemo.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Wrapup area -->
+  <section class="wrapup-area">
+    <div class="wrapper">
+      <div class="wrapup-wraper">
+        <div class="wrapup-left" style="padding: 2rem">
+          <h1>Lorem ipsum dolor sit amet</h1>
+          <p class="lead">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Qui,
+            deleniti. Inventore sequi, ipsum aperiam deleniti culpa fuga,
+            voluptatum natus labore placeat numquam laborum totam veritatis
+            quam voluptates quod adipisci et.
+          </p>
+        </div>
+        <div class="wrapup-right dark-bg" style="padding: 2rem">
+          <div style="position: relative">
+            <h1 class="text-lg">
+              Lorem ipsum <br />
+              dolor sit amet
+            </h1>
+            <a href="#" class="btn btn-orange">Want a Developer</a>
           </div>
         </div>
       </div>
-      <h4 class="copywrite">Copywrite &copy; 2021 - 2021 | Adil Mohammed</h4>
-    </footer>
+    </div>
+  </section>
 
-    <!-- Script area -->
-    <script src="./static/js/main.js" type="text/javascript"></script>
-  </body>
+  <section class="section-free-gap dark-bg"></section>
+
+  <style>
+    #message-box {
+      display: none;
+      position: fixed;
+      width: 300px;
+      bottom: 2rem;
+      right: 2rem;
+      padding: 1rem 2rem;
+      background-color: rgba(111, 66, 193, 0.9);
+      border-radius: 10px;
+      color: #fff;
+      transform: scale(0);
+      animation-fill-mode: forwards;
+      animation-duration: 0.5s;
+      animation-name: messageAnim;
+      animation-timing-function: ease-in-out;
+      animation-play-state: paused;
+      transform-origin: bottom right;
+    }
+
+    .btn-xm {
+      border: 1px solid #000;
+      background-color: #000;
+      border-radius: 2em;
+      padding: 0.5rem 2rem;
+      cursor: pointer;
+      color: #fff;
+    }
+
+    #message-box #close-btn {
+      float: right;
+      cursor: pointer;
+      background-color: transparent;
+      color: #fff;
+      border: none;
+    }
+
+    #message-box .chat-img {
+      position: absolute;
+      width: 80px;
+      top: -30px;
+      left: -30px;
+    }
+  </style>
+
+  <!-- Hello message -->
+  <div id="message-box">
+    <img class="chat-img" src="./static/img/positive-comment.svg" alt="Chat With Me" />
+    <button id="close-btn"><span class="flaticon-error"></span></button>
+    <h1>Hello. I'm Here</h1>
+    <h4>
+      Now, I think you got an idea why you should choose me for your next
+      business.
+    </h4>
+    <p>Simply contact me and I will respond as soon as possible.</p>
+    <a href="contact.html" class="btn-xm">Contact me</a>
+  </div>
+
+  <!-- Footer area -->
+  <footer>
+    <div class="wrapper">
+      <div class="d-flex">
+        <p class="about">
+          <small>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero id
+            saepe necessitatibus quisquam facere illum cumque, cum
+            perspiciatis ea? Reiciendis ipsum amet dolore expedita
+            necessitatibus optio dolor dolorum odio omnis!
+          </small>
+        </p>
+        <div class="social-menu-list">
+          <a href="#" target="_blank">
+            <img class="img-logo" src="./static/img/logos/linkedin.svg" alt="" />
+            <p>Connet me on Linkedin</p>
+          </a>
+          <a href="#" target="_blank">
+            <img class="img-logo" src="./static/img/logos/facebook.svg" alt="" />
+            <p>Connet me on Facebook</p>
+          </a>
+          <a href="#" target="_blank">
+            <img class="img-logo" src="./static/img/logos/whatsapp.svg" alt="" />
+            <p>Connet me on Whatsapp</p>
+          </a>
+          <a href="#" target="_blank">
+            <img class="img-logo" src="./static/img/logos/telegram.svg" alt="" />
+            <p>Connet me on Telegram</p>
+          </a>
+        </div>
+      </div>
+    </div>
+    <h4 class="copywrite">Copywrite &copy; 2021 - 2021 | Adil Mohammed</h4>
+  </footer>
+
+  <script type="application/javascript">
+
+    function loadBlogs() {
+      var data_file = "blogs.json";
+      var http_request = new XMLHttpRequest();
+      try {
+        // Opera 8.0+, Firefox, Chrome, Safari
+        http_request = new XMLHttpRequest();
+      } catch (e) {
+        // Internet Explorer Browsers
+        try {
+          http_request = new ActiveXObject("Msxml2.XMLHTTP");
+
+        } catch (e) {
+
+          try {
+            http_request = new ActiveXObject("Microsoft.XMLHTTP");
+          } catch (e) {
+            // Something went wrong
+            alert("Something went wrong:(");
+            return false;
+          }
+
+        }
+      }
+
+      http_request.onreadystatechange = function () {
+
+        if (http_request.readyState == 4) {
+          // Javascript function JSON.parse to parse JSON data
+          var jsonObj = JSON.parse(http_request.responseText);
+          
+          // jsonObj variable now contains the data structure and can
+          // be accessed as jsonObj.name and jsonObj.country.
+          var counter = 0;
+          document.querySelector('.blog-loader').addEventListener('click', function () {
+            counter++;
+            var start = counter * 4;
+            var end = start + 4;
+            loadQuantity(jsonObj, start, end);
+          });
+        }
+      }
+
+      const blogWrap = document.querySelector('#blog-wrap');
+
+      function formatedBlog (blog) {
+        var eleBlog = `<a href="#">
+        <div class="blog-single">
+          <h5><span class="flaticon-user-6"></span> Adil Mohammed</h5>
+          <h2>${blog.title}</h2>
+          <p>
+            ${blog.description}
+          </p>
+          <h5><span class="flaticon-calendar-2"></span> Jun 21, 2021</h5>
+          <div class="likes-wrap">
+            <span class="flaticon-like"></span> 126 likes <br />
+            <span class="flaticon-more-2"></span> 43 Comments
+          </div>
+        </div>
+      </a>`
+      var parser = new DOMParser();
+      var doc = parser.parseFromString(eleBlog, 'text/html');
+      return doc.body
+      }
+
+      function loadQuantity(jsonObj, start=0, end=4) {
+        const blogs = jsonObj['blogs'].slice(start, end);
+        blogs.forEach(blog => {
+          blogWrap.append(formatedBlog(blog));
+        });
+        if (end >= jsonObj['blogs'].length) {
+          document.querySelector('.blog-loader').setAttribute('disabled', 'disabled');
+        }
+      }
+
+      http_request.open("GET", data_file, true);
+      http_request.send();
+    }
+    loadBlogs()
+  </script>
+
+  <!-- Script area -->
+  <script src="./static/js/main.js" type="text/javascript"></script>
+</body>
+
 </html>
