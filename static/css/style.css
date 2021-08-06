@@ -418,6 +418,51 @@ header.unpin {
   background-color: var(--dark-light);
 }
 
+.overview {
+  position: fixed;
+  top: 0;
+  left: 0;
+  padding: 1rem;
+  padding-top: 5rem;
+  border-bottom-right-radius: 10px;
+  background-color: var(--light);
+  color: var(--dark-light);
+  border-right: 1px solid var(--puple-light);
+  border-bottom: 1px solid var(--puple-light);
+  z-index: 9;
+}
+
+.overview h4 {
+  padding: 0;
+  margin: 0;
+}
+
+.overview .list-overview {
+  display: none;
+  margin-top: 1rem;
+  -webkit-transform-origin: top left;
+          transform-origin: top left;
+  -webkit-animation: forwards zoomIn .5s ease;
+          animation: forwards zoomIn .5s ease;
+}
+
+.overview .list-overview a {
+  display: block;
+  padding: .5rem;
+  text-decoration: none;
+  color: var(--dark-light);
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+.overview .list-overview a:hover {
+  background-color: #fff;
+}
+
+.overview:hover .list-overview {
+  display: block;
+}
+
 .wrapper {
   width: 100%;
   padding-right: var(--bs-gutter-x, 0.75rem);
@@ -503,11 +548,37 @@ a[target='_blank']::after {
   top: 0;
   height: 50%;
   left: -20px;
-  width: 20px;
-  height: 20px;
+  width: 10px;
+  height: 10px;
   border-radius: 50%;
   border-radius: 4em;
+  -webkit-box-shadow: 0 0 0 10px rgba(137, 78, 247, 0.2);
+          box-shadow: 0 0 0 10px rgba(137, 78, 247, 0.2);
   background-color: var(--puple-light);
+  -webkit-animation: infinite blinkAnim 2s ease-in-out;
+          animation: infinite blinkAnim 2s ease-in-out;
+}
+
+@-webkit-keyframes blinkAnim {
+  from {
+    -webkit-box-shadow: 0 0 0 0 rgba(137, 78, 247, 0.5);
+            box-shadow: 0 0 0 0 rgba(137, 78, 247, 0.5);
+  }
+  to {
+    -webkit-box-shadow: 0 0 0 30px rgba(137, 78, 247, 0);
+            box-shadow: 0 0 0 30px rgba(137, 78, 247, 0);
+  }
+}
+
+@keyframes blinkAnim {
+  from {
+    -webkit-box-shadow: 0 0 0 0 rgba(137, 78, 247, 0.5);
+            box-shadow: 0 0 0 0 rgba(137, 78, 247, 0.5);
+  }
+  to {
+    -webkit-box-shadow: 0 0 0 30px rgba(137, 78, 247, 0);
+            box-shadow: 0 0 0 30px rgba(137, 78, 247, 0);
+  }
 }
 
 .hero {
@@ -1012,7 +1083,6 @@ button[disabled="disabled"] {
   width: 135px;
   height: 135px;
   border-radius: 50%;
-  padding: 1rem;
   color: var(--light);
   background-color: var(--puple);
   -webkit-box-shadow: 0 0 0 10px rgba(111, 66, 193, 0.3);
@@ -1090,6 +1160,32 @@ button[disabled="disabled"] {
   border-radius: 2px;
   -webkit-transition: .3s;
   transition: .3s;
+  -webkit-transform-origin: top left;
+          transform-origin: top left;
+  -webkit-animation: forwards zoomIn .5s ease;
+          animation: forwards zoomIn .5s ease;
+}
+
+@-webkit-keyframes zoomIn {
+  from {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+  to {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+@keyframes zoomIn {
+  from {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+  to {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
 }
 
 .blog-single:hover {

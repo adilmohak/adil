@@ -278,6 +278,46 @@ header.unpin {
   position: static;
   background-color: var(--dark-light);
 }
+// End header style
+
+// overview
+.overview {
+  position: fixed;
+  top: 0;
+  left: 0;
+  padding: 1rem;
+  padding-top: 5rem;
+  border-bottom-right-radius: 10px;
+  background-color: var(--light);
+  color: var(--dark-light);
+  border-right: 1px solid var(--puple-light);
+  border-bottom: 1px solid var(--puple-light);
+  z-index: 9;
+  h4 {
+    padding: 0;
+    margin: 0;
+  }
+  .list-overview {
+    display: none;
+    margin-top: 1rem;
+    transform-origin: top left;
+    animation: forwards zoomIn .5s ease;
+  
+    a {
+      display: block;
+      padding: .5rem;
+      text-decoration: none;
+      color: var(--dark-light);
+      transition: .3s;
+      &:hover {
+        background-color: #fff;
+      }
+    }
+  }
+  &:hover .list-overview {
+    display: block;
+  }
+}
 
 // .wrapper {
 //   padding-left: 100px;
@@ -358,11 +398,21 @@ a[target='_blank']::after {
   top: 0;
   height: 50%;
   left: -20px;
-  width: 20px;
-  height: 20px;
+  width: 10px;
+  height: 10px;
   border-radius: 50%;
   border-radius: 4em;
+  box-shadow: 0 0 0 10px rgba(137, 78, 247, .2);
   background-color: var(--puple-light);
+  animation: infinite blinkAnim 2s ease-in-out;
+}
+@keyframes blinkAnim {
+  from {
+    box-shadow: 0 0 0 0 rgba(137, 78, 247, .5);
+  }
+  to {
+    box-shadow: 0 0 0 30px rgba(137, 78, 247, 0);
+  }
 }
 
 .hero {
@@ -805,7 +855,6 @@ button[disabled="disabled"] {
   width: 135px;
   height: 135px;
   border-radius: 50%;
-  padding: 1rem;
   color: var(--light);
   background-color: var(--puple);
   box-shadow: 0 0 0 10px rgba(111, 66, 193, .3);
@@ -866,6 +915,16 @@ button[disabled="disabled"] {
   color: var(--dark-light);
   border-radius: 2px;
   transition: .3s;
+  transform-origin: top left;
+  animation: forwards zoomIn .5s ease;
+}
+@keyframes zoomIn {
+  from {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(1);
+  }
 }
 .blog-single:hover {
   border-color: var(--puple-light);

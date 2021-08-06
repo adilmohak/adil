@@ -122,6 +122,89 @@ window.onload = () => {
     }
   };
 
+  /* ************* Load Blog *********** */
+
+  function loadBlogs() {
+    var data_file = "blogs.json";
+    var http_request = new XMLHttpRequest();
+    try {
+      // Opera 8.0+, Firefox, Chrome, Safari
+      http_request = new XMLHttpRequest();
+    } catch (e) {
+      // Internet Explorer Browsers
+      try {
+        http_request = new ActiveXObject("Msxml2.XMLHTTP");
+
+      } catch (e) {
+
+        try {
+          http_request = new ActiveXObject("Microsoft.XMLHTTP");
+        } catch (e) {
+          // Something went wrong
+          alert("Something went wrong:(");
+          return false;
+        }
+
+      }
+    }
+
+    http_request.onreadystatechange = function () {
+
+      if (http_request.readyState == 4) {
+        // Javascript function JSON.parse to parse JSON data
+        var jsonObj = JSON.parse(http_request.responseText);
+        
+        // jsonObj variable now contains the data structure and can
+        // be accessed as jsonObj.name and jsonObj.country.
+        var counter = 0;
+        document.querySelector('.blog-loader').addEventListener('click', function () {
+          counter++;
+          var start = counter * 4;
+          var end = start + 4;
+          loadQuantity(jsonObj, start, end);
+        });
+      }
+    }
+
+    const blogWrap = document.querySelector('#blog-wrap');
+
+    function formatedBlog (blog) {
+      var eleBlog = `<a href="#">
+      <div class="blog-single">
+        <h5><span class="flaticon-user-6"></span> Adil Mohammed</h5>
+        <h2>${blog.title}</h2>
+        <p>
+          ${blog.description}
+        </p>
+        <h5><span class="flaticon-calendar-2"></span> Jun 21, 2021</h5>
+        <div class="likes-wrap">
+          <span class="flaticon-like"></span> 126 likes <br />
+          <span class="flaticon-more-2"></span> 43 Comments
+        </div>
+      </div>
+    </a>`
+    var parser = new DOMParser();
+    var doc = parser.parseFromString(eleBlog, 'text/html');
+    return doc.body
+    }
+
+    function loadQuantity(jsonObj, start=0, end=4) {
+      const blogs = jsonObj['blogs'].slice(start, end);
+      blogs.forEach(blog => {
+        blogWrap.append(formatedBlog(blog));
+      });
+      if (end >= jsonObj['blogs'].length) {
+        document.querySelector('.blog-loader').setAttribute('disabled', 'disabled');
+      }
+    }
+
+    http_request.open("GET", data_file, true);
+    http_request.send();
+  }
+  loadBlogs()
+  
+  /* ************* End Blog Load ************ */
+
   // message box
   var messageCloseBtn = document.getElementById("close-btn");
   messageCloseBtn.addEventListener("click", function () {
