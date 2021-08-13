@@ -15,7 +15,7 @@
   <title>Adil Mohak</title>
 
   <link rel="apple-touch-icon" href="./static/img/favicon/AAA/favicon.png" />
-  <link rel="shortcut icon" href="./static/img/favicon/AAA/favicon.png" type="image/x-icon">
+  <link rel="shortcut icon" href="./static/img/favicon/AAA/favicon.png" type="image/x-icon" />
 
   <!-- Google Rubik font -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -31,7 +31,6 @@
 </head>
 
 <body id="main-wrapper">
-
   <!-- Preloader -->
   <div class="preloader">
     <!-- <img src="./static/img/3D-snake.gif" alt="" /> -->
@@ -51,13 +50,22 @@
   <!-- Header navbar -->
   <header id="header-nav">
     <nav>
-      <a href="index.html" class="leader">adil.</a>
+      <a href="index.html" class="leader"><img style="border-radius: 3px" src="./static/img/favicon/AAA/favicon.png" />
+        adil.</a>
+      <div class="burger-menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
       <ul class="menu-list">
         <li>
           <a href="index.html" class="menu-link active" data-page="home">Home</a>
         </li>
         <li>
-          <a href="portfolio.html" class="menu-link" data-page="portfolio">My Portfolios</a>
+          <a href="portfolio.html" class="menu-link" data-page="portfolio">Portfolios</a>
+        </li>
+        <li>
+          <a href="blogs.html" class="menu-link" data-page="portfolio">Blogs</a>
         </li>
         <li>
           <a href="bymecoffee.html" class="menu-link" data-page="bymecoffee">&heartsuit; By Me Coffee</a>
@@ -77,34 +85,26 @@
     </nav>
   </header>
 
-  <!-- Overview -->
-  <div class="overview">
-    <h4>Overview</h4>
-    <div class="list-overview">
-      <a href="#">Introduction section</a>
-      <a href="#">Services that I offer</a>
-      <a href="#">Completed and ongoing projects</a>
-      <a href="#">Blog posts</a>
-      <a href="#">Frequently asked questions</a>
-    </div>
-  </div>
-
-  <!-- Banner -->
+  <!-- Banner hero -->
   <div class="hero">
-    <div class="wrapper" style="display: flex; justify-content: space-between">
+    <div class="wrapper d-flex">
       <div class="content-hero" style="position: relative">
-        <h1>Lorem ipsum dolor sit amet consectetur adipisicing</h1>
-        <p>
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Omnis
-          fugit beatae rerum recusandae maiores quis accusantium, sapiente
-          ipsum quam similique possimus placeat, quo, iste assumenda
-          consectetur minus quaerat consequatur autem.
+        <h1>Hello :)</h1>
+        <p class="lead">
+          I'm Adil Mohammed an ambitious problem solver with a passion for
+          online businesses, and who would like to join a team of like-minded
+          developers. Have much experience of creating both logical and
+          innovative solutions to complex web problems. Have a keen interest
+          in technology, website, and mobile applications, plus user
+          experience. Hard-working web developer with a flair for creating
+          elegant solutions in the least amount of time.
         </p>
         <div class="btn-group">
-          <a href="contact.html" class="btn btn-orange">Want a Developer</a>
+          <a href="contact.html" class="btn btn-orange">CONTACT ME</a>
           <a href="portfolio.html" class="btn btn-outline-light">Explor My Projects</a>
         </div>
       </div>
+      <br>
       <div class="content-right">
         <h1 class="hero-intro-title">
           LOOKING <br />
@@ -124,15 +124,14 @@
           <img width="80%" src="./static/img/avater-3.png" style="margin-bottom: -20px" alt="" />
         </div>
         <div class="column-6">
-          <h1 style="font-size: 5vw">
+          <h1 style="font-size: 50px">
             Websites <br />
             Gone <span style="color: #6f42c1"> Right </span>
           </h1>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit
-            quae ipsum sed eveniet? Dolores, labore? Quaerat natus
-            exercitationem, corrupti saepe pariatur quidem incidunt laboriosam
-            maiores sit amet est. Ex, sequi.
+          <p class="lead">
+            I'm here to help you grow your business by developing artistic
+            websites. You can find out more about me on my CV (curriculum
+            vitae).
           </p>
           <div class="btn-wrapper" id="cv-download-wrapper">
             <a href="./static/files/CV_2021_Adil_Mohammed.pdf" download="CV_2021_Adil_Mohammed_Developer.pdf"
@@ -189,8 +188,8 @@
             <p>
               Building, creating, and maintaining websites. It includes
               aspects such as web design, web publishing, web programming, and
-              database management. We build a websites with a high security
-              and scalablity
+              database management. I build a websites with a high security and
+              scalablity
             </p>
           </div>
         </div>
@@ -198,13 +197,22 @@
           <div class="service-single">
             <span class="icon-x-lg flaticon-notepad-2"></span>
             <h1>Content Writer</h1>
-            <p>
-              The lighting, the composition, the subject, and everything else
-              work together harmoniously to convey the right vision or
-              message. Portrait Photography, Photojournalism, Fashion
-              Photography, Sports Photography, Still Life Photography,
-              Editorial Photography, Architectural Photography...
-            </p>
+            <ul>
+              <li>
+                Conducting in-depth research on industry-related topics in
+                order to develop original content.
+              </li>
+              <br />
+              <li>
+                Developing content for blogs, articles, product descriptions,
+                social media, and the company website.
+              </li>
+              <br />
+              <li>
+                Assisting the marketing team in developing content for
+                advertising campaigns.
+              </li>
+            </ul>
           </div>
         </div>
       </div>
@@ -213,7 +221,13 @@
           <div class="service-single">
             <span class="icon-x-lg flaticon-database"></span>
             <h1>Data Analysis With Python</h1>
-            <p></p>
+            <p>
+              Using automated tools to extract data from primary and secondary
+              sources Removing corrupted data and fixing coding errors and
+              related problems Developing and maintaining databases, data
+              systems – reorganizing data in a readable format, and many
+              more...
+            </p>
           </div>
         </div>
         <div class="column-6">
@@ -221,7 +235,7 @@
             <span class="icon-x-lg flaticon-smartphone-2"></span>
             <h1>RESPONSIVE DESIGN</h1>
             <p>
-              We creates dynamic changes to the appearance of a website,
+              I creates dynamic changes to the appearance of a website,
               depending on the screen size and orientation of the device being
               used to view it. In responsive design, page elements reshuffle
               as the viewport grows or shrinks.
@@ -233,8 +247,8 @@
             <span class="icon-x-lg flaticon-windows-3"></span>
             <h1>GRAPHIC DESIGN</h1>
             <p>
-              We create visual concepts, to communicate ideas that inspire,
-              inform, and captivate consumers. We develop the overall layout
+              I create visual concepts, to communicate ideas that inspire,
+              inform, and captivate consumers. I develop the overall layout
               and production design for applications such as advertisements,
               brochures, magazines, reports and so on...
             </p>
@@ -244,64 +258,6 @@
     </div>
   </section>
 
-  <style>
-    .item-single {
-      display: none;
-    }
-
-    /* img {vertical-align: middle;} */
-
-    /* Slideshow container */
-    .slideshow-container {
-      position: relative;
-      width: 90%;
-      max-width: 1000px;
-      border-radius: 0 0 15px 15px;
-      margin: 0 auto;
-      overflow: hidden;
-    }
-
-    .slideshow-container img {
-      vertical-align: middle;
-      width: 60%;
-      max-width: 500px;
-      border-radius: 5px;
-      box-shadow: -1px 3px 32px -3px rgba(0, 0, 0, 0.2);
-      -webkit-box-shadow: -1px 3px 32px -3px rgba(0, 0, 0, 0.2);
-      -moz-box-shadow: -1px 3px 32px -3px rgba(0, 0, 0, 0.2);
-    }
-
-    /* Caption text */
-    .slideshow-container .text {
-      color: #f2f2f2;
-      font-size: 15px;
-      padding: 8px 12px;
-      position: absolute;
-      bottom: 8px;
-      width: 100%;
-      text-align: center;
-    }
-
-    /* The dots/bullets/indicators */
-    .slideshow-container .dot {
-      height: 15px;
-      width: 15px;
-      margin: 0 2px;
-      background-color: #bbb;
-      border-radius: 50%;
-      display: inline-block;
-      transition: background-color 0.6s ease;
-    }
-
-    .slideshow-container .active {
-      background-color: #717171;
-    }
-
-    .item-single .row .column-6 {
-      padding: 0;
-    }
-  </style>
-
   <!-- Project Slider -->
   <section class="section-gap project-slider">
     <div class="slideshow-container" style="padding: 4rem">
@@ -310,14 +266,7 @@
           <div class="column-6 fade-up">
             <img src="./static/img/pencil.jpg" style="width: 100%" />
           </div>
-          <div class="column-6 fade-down" style="
-                padding: 3rem;
-                background: rgba(255, 255, 255, 0.8);
-                color: #353b42;
-                border-radius: 15px;
-                margin-left: -60px;
-                margin-top: 60px;
-              ">
+          <div style="padding: 2rem;" class="column-6 fade-down">
             <h1>Some Title Here</h1>
             <p>
               Lorem ipsum dolor sit amet, consectetur adipisicing elit.
@@ -336,7 +285,7 @@
           <div class="column-6 move-in">
             <img src="./static/img/pencil.jpg" style="width: 100%" />
           </div>
-          <div class="column-6 fade-up" style="padding: 3rem">
+          <div style="padding: 2rem;" class="column-6 fade-up">
             <h1>Some Title Here</h1>
             <p>
               Lorem ipsum dolor sit amet, consectetur adipisicing elit.
@@ -355,7 +304,7 @@
           <div class="column-6 move-in-left">
             <img src="./static/img/pencil.jpg" style="width: 100%" />
           </div>
-          <div class="column-6 move-in" style="padding: 3rem">
+          <div style="padding: 2rem;" class="column-6 move-in">
             <h1>&NewLine; Some Title Here</h1>
             <p>
               Lorem ipsum dolor sit amet, consectetur adipisicing elit.
@@ -385,22 +334,18 @@
       <div class="section-header">
         <h1>Projects</h1>
         <p class="lead">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. At
-          perferendis fugit, corporis tempore adipisci placeat sed, cum
-          cumque, fuga enim itaque impedit veniam doloribus incidunt eos porro
-          officiis. Eius, magnam.
+          <strong> Mind blowing projects:- </strong> ongoing and completed projects.
         </p>
       </div>
       <div class="row">
         <div class="column-6">
-          <div class="project-single">
+          <div class="project-single active">
             <div class="counter">1</div>
             <h2>Student Management & E-learning System</h2>
             <p>
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-              Numquam similique minima quidem itaque veniam repellat
-              recusandae, eveniet blanditiis, impedit in animi repudiandae rem
-              minus id dolor autem mollitia tenetur alias.
+              Contains features like: course Add & Drop, Video Tutorials, Documentations, News And Events, calculates
+              the Total, Avarage, point, and grade of each student then save it Also, the system tells the student
+              whether he/she pass, fail or pass with a warning, etc...
             </p>
             <p class="quote small-text">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum,
@@ -408,17 +353,18 @@
               inventore quisquam quo explicabo quis voluptas quibusdam.
               Nesciunt illum temporibus porro fugiat ab? Explicabo, ducimus.
             </p>
+            <hr>
+            <a href="#" class="btn btn-xm">Watch Video</a>
           </div>
         </div>
         <div class="column-6">
-          <div class="project-single active">
+          <div class="project-single">
             <div class="counter">2</div>
-            <h2>Student Management & E-learning System</h2>
+            <h2>Django Book Sharing Platform</h2>
             <p>
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-              Numquam similique minima quidem itaque veniam repellat
-              recusandae, eveniet blanditiis, impedit in animi repudiandae rem
-              minus id dolor autem mollitia tenetur alias.
+              This is a platform that allows you to connect with other
+              like-minded readers, swap books, discuss, comment, and review
+              books.
             </p>
             <p class="quote small-text">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum,
@@ -426,12 +372,14 @@
               inventore quisquam quo explicabo quis voluptas quibusdam.
               Nesciunt illum temporibus porro fugiat ab? Explicabo, ducimus.
             </p>
+            <hr>
+            <a href="#" class="btn btn-xm">Visite Site</a>
           </div>
         </div>
         <div class="column-6">
           <div class="project-single">
             <div class="counter">3</div>
-            <h2>Student Management & E-learning System</h2>
+            <h2>ACO-Ethiopia</h2>
             <p>
               Lorem ipsum, dolor sit amet consectetur adipisicing elit.
               Numquam similique minima quidem itaque veniam repellat
@@ -444,6 +392,8 @@
               inventore quisquam quo explicabo quis voluptas quibusdam.
               Nesciunt illum temporibus porro fugiat ab? Explicabo, ducimus.
             </p>
+            <hr>
+            <a href="#" class="btn btn-xm">Visite Site</a>
           </div>
         </div>
       </div>
@@ -547,8 +497,7 @@
       <div class="section-header">
         <h1>FAQ</h1>
         <p class="lead">
-          <b>Frequantly Asked Questions: </b> Most common questions that my
-          customers asked me before I start working of them.
+          <b>Frequantly Asked Questions: </b> The most common questions my clients ask me.
         </p>
       </div>
       <div class="accordion active">
@@ -641,56 +590,11 @@
 
   <section class="section-free-gap dark-bg"></section>
 
-  <style>
-    #message-box {
-      display: none;
-      position: fixed;
-      width: 300px;
-      bottom: 2rem;
-      right: 2rem;
-      padding: 1rem 2rem;
-      background-color: rgba(111, 66, 193, 0.9);
-      border-radius: 10px;
-      color: #fff;
-      transform: scale(0);
-      animation-fill-mode: forwards;
-      animation-duration: 0.5s;
-      animation-name: messageAnim;
-      animation-timing-function: ease-in-out;
-      animation-play-state: paused;
-      transform-origin: bottom right;
-    }
-
-    .btn-xm {
-      border: 1px solid #000;
-      background-color: #000;
-      border-radius: 2em;
-      padding: 0.5rem 2rem;
-      cursor: pointer;
-      color: #fff;
-    }
-
-    #message-box #close-btn {
-      float: right;
-      cursor: pointer;
-      background-color: transparent;
-      color: #fff;
-      border: none;
-    }
-
-    #message-box .chat-img {
-      position: absolute;
-      width: 80px;
-      top: -30px;
-      left: -30px;
-    }
-  </style>
-
   <!-- Hello message -->
   <div id="message-box">
     <img class="chat-img" src="./static/img/positive-comment.svg" alt="Chat With Me" />
     <button id="close-btn"><span class="flaticon-error"></span></button>
-    <h1>Hello. I'm Here</h1>
+    <h2>Hello. I'm Here</h2>
     <h4>
       Now, I think you got an idea why you should choose me for your next
       business.
@@ -719,6 +623,15 @@
           <a href="#" target="_blank">
             <img class="img-logo" src="./static/img/social-logos/facebook.svg" alt="" />
             <p>Connet me on Facebook</p>
+          </a>
+          <a href="#" target="_blank">
+            <img class="img-logo" src="./static/img/social-logos/youtube-logo.svg" alt="" />
+            <p>Watch My Videos</p>
+          </a>
+          <a href="#" target="_blank">
+            <img class="img-logo" style="background-color: #fff; border-radius: 50%;"
+              src="./static/img/social-logos/github-logo.svg" alt="" />
+            <p>My Works On Github</p>
           </a>
           <a href="#" target="_blank">
             <img class="img-logo" src="./static/img/social-logos/whatsapp.svg" alt="" />

@@ -1,5 +1,4 @@
 window.onload = () => {
-
   /* ****** Remove the preloader after the DOM fully loaded ***** */
   const preloader = document.querySelector(".preloader");
   preloader.style.animationPlayState = "running";
@@ -7,27 +6,27 @@ window.onload = () => {
   /* *************** Accessing user location **************** */
   window.navigator.geolocation.getCurrentPosition(
     function (res) {
-      console.log(res)
+      console.log(res);
     },
     function (err) {
-      console.log(err)
+      console.log(err);
     }
   );
   /* ************* End user location access ************ */
 
   /* ************ handle button click ************ */
-  var buttons = document.querySelectorAll('.btn');
-  buttons.forEach(btn => {
-    btn.addEventListener('click', function () {
-      var preText = btn.innerHTML
+  var buttons = document.querySelectorAll(".btn");
+  buttons.forEach((btn) => {
+    btn.addEventListener("click", function () {
+      var preText = btn.innerHTML;
       btn.innerHTML = "processing...";
       setTimeout(() => {
         btn.innerHTML = preText;
       }, 2000);
-    })
-  })
+    });
+  });
   /* ************ End handle button click ************ */
-  
+
   /* *********** Dark Light *********** */
   var darkLight = localStorage.getItem("dark");
   var pinNavbar = localStorage.getItem("unpin");
@@ -134,9 +133,7 @@ window.onload = () => {
       // Internet Explorer Browsers
       try {
         http_request = new ActiveXObject("Msxml2.XMLHTTP");
-
       } catch (e) {
-
         try {
           http_request = new ActiveXObject("Microsoft.XMLHTTP");
         } catch (e) {
@@ -144,31 +141,31 @@ window.onload = () => {
           alert("Something went wrong:(");
           return false;
         }
-
       }
     }
 
     http_request.onreadystatechange = function () {
-
       if (http_request.readyState == 4) {
         // Javascript function JSON.parse to parse JSON data
         var jsonObj = JSON.parse(http_request.responseText);
-        
+
         // jsonObj variable now contains the data structure and can
         // be accessed as jsonObj.name and jsonObj.country.
         var counter = 0;
-        document.querySelector('.blog-loader').addEventListener('click', function () {
-          counter++;
-          var start = counter * 4;
-          var end = start + 4;
-          loadQuantity(jsonObj, start, end);
-        });
+        document
+          .querySelector(".blog-loader")
+          .addEventListener("click", function () {
+            counter++;
+            var start = counter * 4;
+            var end = start + 4;
+            loadQuantity(jsonObj, start, end);
+          });
       }
-    }
+    };
 
-    const blogWrap = document.querySelector('#blog-wrap');
+    const blogWrap = document.querySelector("#blog-wrap");
 
-    function formatedBlog (blog) {
+    function formatedBlog(blog) {
       var eleBlog = `<a href="#">
       <div class="blog-single">
         <h5><span class="flaticon-user-6"></span> Adil Mohammed</h5>
@@ -182,27 +179,29 @@ window.onload = () => {
           <span class="flaticon-more-2"></span> 43 Comments
         </div>
       </div>
-    </a>`
-    var parser = new DOMParser();
-    var doc = parser.parseFromString(eleBlog, 'text/html');
-    return doc.body
+    </a>`;
+      var parser = new DOMParser();
+      var doc = parser.parseFromString(eleBlog, "text/html");
+      return doc.body;
     }
 
-    function loadQuantity(jsonObj, start=0, end=4) {
-      const blogs = jsonObj['blogs'].slice(start, end);
-      blogs.forEach(blog => {
+    function loadQuantity(jsonObj, start = 0, end = 4) {
+      const blogs = jsonObj["blogs"].slice(start, end);
+      blogs.forEach((blog) => {
         blogWrap.append(formatedBlog(blog));
       });
-      if (end >= jsonObj['blogs'].length) {
-        document.querySelector('.blog-loader').setAttribute('disabled', 'disabled');
+      if (end >= jsonObj["blogs"].length) {
+        document
+          .querySelector(".blog-loader")
+          .setAttribute("disabled", "disabled");
       }
     }
 
     http_request.open("GET", data_file, true);
     http_request.send();
   }
-  loadBlogs()
-  
+  loadBlogs();
+
   /* ************* End Blog Load ************ */
 
   // message box
@@ -278,14 +277,27 @@ window.onload = () => {
   /* ************* End Slider **************/
 
   /* ******** Accordion ******** */
-  const accordionTogglers = document.querySelectorAll('.accordion-toggler');
-  accordionTogglers.forEach(btn => {
-    btn.addEventListener('click', function () {
-      const activeAcc = document.querySelector('.accordion.active');
-      activeAcc.classList.remove('active');
-      btn.parentElement.classList.toggle('active');
-    })
-  })
+  const accordionTogglers = document.querySelectorAll(".accordion-toggler");
+  accordionTogglers.forEach((btn) => {
+    btn.addEventListener("click", function () {
+      const activeAcc = document.querySelector(".accordion.active");
+      activeAcc.classList.remove("active");
+      btn.parentElement.classList.toggle("active");
+    });
+  });
   // accordion.children[1].style.display = "block"
   /* ******** End Accordion ******** */
-}
+
+  /* ******** Burger button ******** */
+  const burgerBtn = document.querySelector(".burger-menu");
+  const menuList = document.querySelector(".menu-list");
+
+  burgerBtn.addEventListener("click", function () {
+    menuList.classList.toggle("active-menu");
+    if (menuList.classList.contains("active-menu")) {
+      burgerBtn.classList.add("active-btn");
+    } else {
+      burgerBtn.classList.remove("active-btn");
+    }
+  });
+};

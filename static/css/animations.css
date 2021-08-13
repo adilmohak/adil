@@ -123,3 +123,12 @@
     transform: scale(0);
   }
 }
+
+@keyframes dropDownAnim {
+  from {
+    transform: translateY(100%);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
