@@ -648,16 +648,7 @@ a[target="_blank"]::after {
   width: 100%;
   padding: 6rem 0;
   color: var(--light);
-}
-
-.hero::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  right: 0;
-  left: 0;
-  z-index: -1;
+  background-color: var(--dark);
   background-image: url("../img/pencil.jpg");
   background-size: cover;
   background-position: top center;
@@ -1152,7 +1143,7 @@ button[disabled="disabled"] {
           box-shadow: 0 0 0 10px rgba(111, 66, 193, 0.3);
 }
 
-.project-slider {
+.skill-area {
   background-color: #f0f0f0;
   -webkit-transition: 0.5s;
   transition: 0.5s;
@@ -1365,7 +1356,7 @@ section.section-slanted::before {
 }
 
 .text-lg {
-  font-size: 3vw;
+  font-size: 40px;
 }
 
 .wrapup-area {
@@ -1645,7 +1636,7 @@ footer .copywrite {
   color: var(--light);
 }
 
-#main-wrapper.dark .project-slider {
+#main-wrapper.dark .skill-area {
   background-color: var(--dark-lighter);
 }
 

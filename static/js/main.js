@@ -1,4 +1,5 @@
-window.onload = () => {
+// window.onload = () => {
+document.addEventListener("DOMContentLoaded", function () {
   /* ****** Remove the preloader after the DOM fully loaded ***** */
   const preloader = document.querySelector(".preloader");
   preloader.style.animationPlayState = "running";
@@ -259,7 +260,7 @@ window.onload = () => {
   function showSlides() {
     var i;
     var slides = document.getElementsByClassName("item-single");
-    var dots = document.getElementsByClassName("dot");
+    // var dots = document.getElementsByClassName("dot");
     for (i = 0; i < slides.length; i++) {
       slides[i].style.display = "none";
     }
@@ -267,11 +268,11 @@ window.onload = () => {
     if (slideIndex > slides.length) {
       slideIndex = 1;
     }
-    for (i = 0; i < dots.length; i++) {
-      dots[i].className = dots[i].className.replace(" active", "");
-    }
+    // for (i = 0; i < dots.length; i++) {
+    //   dots[i].className = dots[i].className.replace(" active", "");
+    // }
     slides[slideIndex - 1].style.display = "block";
-    dots[slideIndex - 1].className += " active";
+    // dots[slideIndex - 1].className += " active";
     setTimeout(showSlides, 5000); // Change image every 2 seconds
   }
   /* ************* End Slider **************/
@@ -300,4 +301,4 @@ window.onload = () => {
       burgerBtn.classList.remove("active-btn");
     }
   });
-};
+});
