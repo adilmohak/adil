@@ -1679,6 +1679,18 @@ footer .copywrite {
   color: var(--light);
 }
 
+#main-wrapper.dark .menu-list.active-menu {
+  background-color: var(--dark-light);
+}
+
+#main-wrapper.dark .burger-menu span {
+  background-color: #b9b9b9;
+}
+
+#main-wrapper.dark .burger-menu:hover span {
+  background-color: #fff;
+}
+
 @media screen and (max-width: 770px) {
   .row {
     display: block;
