@@ -1085,6 +1085,7 @@ button[disabled="disabled"] {
   border: 1px solid var(--puple-light);
   border-radius: 2px;
   background-color: #fff;
+  color: var(--dark);
   box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.05);
 }
 /* *********** End Blog area ********** */
@@ -1249,10 +1250,12 @@ section.section-slanted::before {
   display: none;
   position: fixed;
   width: 300px;
+  max-width: 80%;
   bottom: 2rem;
   right: 2rem;
   padding: 1rem 2rem;
   background-color: #fff;
+  color: var(--dark);
   border-radius: 2px;
   box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.1);
   transform: scale(0);
@@ -1346,6 +1349,15 @@ footer .copywrite {
 #main-wrapper.dark header.nav-light nav .leader {
   color: var(--light);
 }
+#main-wrapper.dark .blog-single {
+  color: var(--light);
+}
+#main-wrapper.dark .faq-area {
+  background-color: var(--dark-lighter);
+}
+// #main-wrapper .blog-single .likes-wrap {
+//   color: var(--dark);
+// }
 
 #main-wrapper.dark #cv-download-wrapper.sticky {
   background-color: var(--dark-light);
