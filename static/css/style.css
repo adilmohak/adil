@@ -280,7 +280,7 @@ header nav .menu-list.active-menu {
   overflow-x: auto;
   background-color: #fff;
   text-align: center;
-  padding: 4rem 0;
+  padding: 4rem;
   -webkit-animation: forwards dropDownAnim 0.5s ease;
           animation: forwards dropDownAnim 0.5s ease;
 }
@@ -290,12 +290,8 @@ header nav .menu-list.active-menu .menu-link {
   display: -ms-flexbox;
   display: flex;
   font-size: 20px;
-  padding: 1.5rem;
-  border-bottom: 1px solid #000;
-}
-
-header nav .menu-list.active-menu .menu-link:last-child {
-  border-bottom: none;
+  padding: 0.5rem;
+  border-bottom: 1px solid #f0f0f0;
 }
 
 header nav .menu-list.active-menu .menu-link:hover::before, header nav .menu-list.active-menu .menu-link.active::before {
@@ -351,6 +347,7 @@ header nav .burger-menu span {
   height: 5px;
   border-radius: 100%;
   background-color: #7a7a7a;
+  border: 1px solid #dadada;
   margin-bottom: 4px;
   -webkit-transition: 0.3s;
   transition: 0.3s;

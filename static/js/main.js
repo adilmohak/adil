@@ -140,7 +140,7 @@ document.addEventListener("DOMContentLoaded", function () {
           http_request = new ActiveXObject("Microsoft.XMLHTTP");
         } catch (e) {
           // Something went wrong
-          alert("Something went wrong:(");
+          alert(e);
           return false;
         }
       }
