@@ -276,6 +276,7 @@ header nav .menu-list.active-menu {
   bottom: 0;
   left: 0;
   right: 0;
+  z-index: 11;
   overflow-x: auto;
   background-color: #fff;
   text-align: center;
@@ -741,6 +742,7 @@ a[target="_blank"]::after {
 /* ********* banner area ********** */
 .section-banner {
   min-height: 100vh;
+  margin-bottom: 250px;
 }
 
 .banner {
@@ -844,7 +846,6 @@ a[target="_blank"]::after {
 }
 
 .contact-form {
-  width: 50%;
   padding: 3rem;
   border-radius: 2px;
   background-color: #f2f2f2;
