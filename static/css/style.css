@@ -738,7 +738,6 @@ a[target="_blank"]::after {
 /* ********* banner area ********** */
 .section-banner {
   min-height: 100vh;
-  margin-bottom: 250px;
 }
 
 .banner {

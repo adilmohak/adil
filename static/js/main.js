@@ -150,7 +150,7 @@ document.addEventListener("DOMContentLoaded", function () {
       if (http_request.readyState == 4) {
         // Javascript function JSON.parse to parse JSON data
         var jsonObj = JSON.parse(http_request.responseText);
-
+        loadQuantity((jsonObj = jsonObj));
         // jsonObj variable now contains the data structure and can
         // be accessed as jsonObj.name and jsonObj.country.
         var counter = 0;
@@ -177,8 +177,8 @@ document.addEventListener("DOMContentLoaded", function () {
         </p>
         <h5><span class="flaticon-calendar-2"></span> Jun 21, 2021</h5>
         <div class="likes-wrap">
-          <span class="flaticon-like"></span> 126 likes <br />
-          <span class="flaticon-more-2"></span> 43 Comments
+          <span class="flaticon-like"></span> ${blog.likes} likes <br />
+          <span class="flaticon-more-2"></span> ${blog.comments} Comments
         </div>
       </div>
     </a>`;
