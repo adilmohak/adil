@@ -1,0 +1,439 @@
+    /*
+    Flaticon icon font: Flaticon
+    Creation date: 22/06/2016 15:02
+    */
+
+    @font-face {
+  font-family: "Flaticon";
+  src: url("./Flaticon.eot");
+  src: url("./Flaticon.eot?#iefix") format("embedded-opentype"),
+       url("./Flaticon.woff") format("woff"),
+       url("./Flaticon.ttf") format("truetype"),
+       url("./Flaticon.svg#Flaticon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  @font-face {
+    font-family: "Flaticon";
+    src: url("./Flaticon.svg#Flaticon") format("svg");
+  }
+}
+
+    .fi:before{
+        display: inline-block;
+  font-family: "Flaticon";
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  line-height: 1;
+  text-decoration: inherit;
+  text-rendering: optimizeLegibility;
+  text-transform: none;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  font-smoothing: antialiased;
+    }
+
+    .flaticon-archery-arrow:before { content: "\f100"; }
+.flaticon-arrow-ascendant-point:before { content: "\f101"; }
+.flaticon-arrow-ascending-from-a-cube:before { content: "\f102"; }
+.flaticon-arrow-ascending-from-a-cube-1:before { content: "\f103"; }
+.flaticon-arrow-curve-pointing-up:before { content: "\f104"; }
+.flaticon-arrow-double-in-diagonal:before { content: "\f105"; }
+.flaticon-arrow-head-pointing-down:before { content: "\f106"; }
+.flaticon-arrow-inside-square:before { content: "\f107"; }
+.flaticon-arrow-of-two-point-to-opposite-directions:before { content: "\f108"; }
+.flaticon-arrow-point-down:before { content: "\f109"; }
+.flaticon-arrow-pointing-left:before { content: "\f10a"; }
+.flaticon-arrow-pointing-left-1:before { content: "\f10b"; }
+.flaticon-arrow-pointing-left-2:before { content: "\f10c"; }
+.flaticon-arrow-pointing-left-and-circle:before { content: "\f10d"; }
+.flaticon-arrow-pointing-up:before { content: "\f10e"; }
+.flaticon-arrow-pointing-upper-left:before { content: "\f10f"; }
+.flaticon-arrow-rotating:before { content: "\f110"; }
+.flaticon-arrow-rotating-1:before { content: "\f111"; }
+.flaticon-arrows-couple-pointing-opposite-directions:before { content: "\f112"; }
+.flaticon-arrows-curves-forming-an-oval-shape:before { content: "\f113"; }
+.flaticon-arrows-meeting:before { content: "\f114"; }
+.flaticon-back-curved-arrow:before { content: "\f115"; }
+.flaticon-big-arrow-outline-pointing-down-left:before { content: "\f116"; }
+.flaticon-big-down-arrow:before { content: "\f117"; }
+.flaticon-big-right-arrow:before { content: "\f118"; }
+.flaticon-big-thin-diagonal-arrow:before { content: "\f119"; }
+.flaticon-blank-document-with-arrow:before { content: "\f11a"; }
+.flaticon-blank-page-with-arrow-pointing-up:before { content: "\f11b"; }
+.flaticon-change-height-arrows:before { content: "\f11c"; }
+.flaticon-chevron-pointin-down:before { content: "\f11d"; }
+.flaticon-circle-with-arrow:before { content: "\f11e"; }
+.flaticon-circle-with-down-arrow:before { content: "\f11f"; }
+.flaticon-circular-arrow:before { content: "\f120"; }
+.flaticon-circular-arrow-with-dashed-lines:before { content: "\f121"; }
+.flaticon-circular-arrow-with-dots:before { content: "\f122"; }
+.flaticon-circular-arrow-with-dots-1:before { content: "\f123"; }
+.flaticon-circular-converging-arrows:before { content: "\f124"; }
+.flaticon-circular-refresh-arrows:before { content: "\f125"; }
+.flaticon-circular-refreshment-arrow:before { content: "\f126"; }
+.flaticon-clockwise-arrow:before { content: "\f127"; }
+.flaticon-clockwise-arrow-1:before { content: "\f128"; }
+.flaticon-cloud-uploading:before { content: "\f129"; }
+.flaticon-cloud-with-download-arrow:before { content: "\f12a"; }
+.flaticon-cloud-with-thunder-arrow:before { content: "\f12b"; }
+.flaticon-concentrical-rounded-arrows:before { content: "\f12c"; }
+.flaticon-connecting-rotated-left-and-right-arrows:before { content: "\f12d"; }
+.flaticon-crossing-right-arrows:before { content: "\f12e"; }
+.flaticon-cursor-pointin-left:before { content: "\f12f"; }
+.flaticon-cursor-pointing-up:before { content: "\f130"; }
+.flaticon-curve-arrow:before { content: "\f131"; }
+.flaticon-curve-arrow-down:before { content: "\f132"; }
+.flaticon-curve-arrow-pointing-left:before { content: "\f133"; }
+.flaticon-curve-arrow-pointing-right:before { content: "\f134"; }
+.flaticon-curve-arrow-with-dots:before { content: "\f135"; }
+.flaticon-curve-down-arrow:before { content: "\f136"; }
+.flaticon-curve-down-left-arrow:before { content: "\f137"; }
+.flaticon-curve-left-arrow:before { content: "\f138"; }
+.flaticon-curve-thin-up-arrow:before { content: "\f139"; }
+.flaticon-curved-arrow-pointing-to-right:before { content: "\f13a"; }
+.flaticon-curved-arrow-pointing-up:before { content: "\f13b"; }
+.flaticon-curved-back-arrow:before { content: "\f13c"; }
+.flaticon-curved-down-arrow:before { content: "\f13d"; }
+.flaticon-curved-next-arrow:before { content: "\f13e"; }
+.flaticon-curved-refresh-arrows:before { content: "\f13f"; }
+.flaticon-curved-right-arrow:before { content: "\f140"; }
+.flaticon-curved-shuffle-arrows:before { content: "\f141"; }
+.flaticon-curved-up-arrow:before { content: "\f142"; }
+.flaticon-curved-up-arrow-1:before { content: "\f143"; }
+.flaticon-curved-up-arrow-2:before { content: "\f144"; }
+.flaticon-diagonal-arrow-pointing-up-from-a-circle:before { content: "\f145"; }
+.flaticon-diagonal-indian-arrow-pointing-down:before { content: "\f146"; }
+.flaticon-diagonal-left-arrow:before { content: "\f147"; }
+.flaticon-diagonal-left-arrow-going-up:before { content: "\f148"; }
+.flaticon-diagonal-left-arrow-pointing-down:before { content: "\f149"; }
+.flaticon-diagonal-right-arrow-going-up:before { content: "\f14a"; }
+.flaticon-diagonal-right-arrow-pointing-down:before { content: "\f14b"; }
+.flaticon-diagonal-right-arrow-pointing-down-1:before { content: "\f14c"; }
+.flaticon-diagonal-thick-arrow-pointing-down:before { content: "\f14d"; }
+.flaticon-diagonal-thick-arrows-up-and-down:before { content: "\f14e"; }
+.flaticon-diagonal-up-and-down-arrows:before { content: "\f14f"; }
+.flaticon-directional-arrows-left-and-right:before { content: "\f150"; }
+.flaticon-double-resize-arrow:before { content: "\f151"; }
+.flaticon-down-arrow-and-tex-lines:before { content: "\f152"; }
+.flaticon-down-arrow-from-a-cube:before { content: "\f153"; }
+.flaticon-down-arrow-in-a-circle:before { content: "\f154"; }
+.flaticon-down-arrow-in-a-square:before { content: "\f155"; }
+.flaticon-down-arrow-inside-a-circle:before { content: "\f156"; }
+.flaticon-down-arrow-on-a-cube:before { content: "\f157"; }
+.flaticon-down-arrow-on-document:before { content: "\f158"; }
+.flaticon-down-curved-arrow:before { content: "\f159"; }
+.flaticon-download-curve-arrow:before { content: "\f15a"; }
+.flaticon-eliptical-arrows:before { content: "\f15b"; }
+.flaticon-export-document:before { content: "\f15c"; }
+.flaticon-export-document-1:before { content: "\f15d"; }
+.flaticon-export-document-2:before { content: "\f15e"; }
+.flaticon-export-left-arrow:before { content: "\f15f"; }
+.flaticon-export-left-arrow-1:before { content: "\f160"; }
+.flaticon-fast-forward-arrows:before { content: "\f161"; }
+.flaticon-fast-forward-thin-arrows:before { content: "\f162"; }
+.flaticon-flying-paper-plane:before { content: "\f163"; }
+.flaticon-four-arrows-pointinf-to-the-center:before { content: "\f164"; }
+.flaticon-four-converging-arrows-at-the-center:before { content: "\f165"; }
+.flaticon-geometric-pyramid:before { content: "\f166"; }
+.flaticon-going-circles:before { content: "\f167"; }
+.flaticon-hexagon-with-left-arrow:before { content: "\f168"; }
+.flaticon-hexagon-with-right-arrow:before { content: "\f169"; }
+.flaticon-increasing-up-arrows:before { content: "\f16a"; }
+.flaticon-indian-arrow:before { content: "\f16b"; }
+.flaticon-indian-arrow-pointing-down:before { content: "\f16c"; }
+.flaticon-indian-arrow-poiting-down:before { content: "\f16d"; }
+.flaticon-indian-right-arrow:before { content: "\f16e"; }
+.flaticon-insert-in-document:before { content: "\f16f"; }
+.flaticon-left-arrow:before { content: "\f170"; }
+.flaticon-left-arrow-with-circle:before { content: "\f171"; }
+.flaticon-left-back-arrow:before { content: "\f172"; }
+.flaticon-left-round-angle-arrow:before { content: "\f173"; }
+.flaticon-lightning-arrow-on-cube:before { content: "\f174"; }
+.flaticon-line-graph-down-arrow:before { content: "\f175"; }
+.flaticon-line-graph-with-ascending-arrow:before { content: "\f176"; }
+.flaticon-masculin-symbol:before { content: "\f177"; }
+.flaticon-mouse-cursor-pointing-down:before { content: "\f178"; }
+.flaticon-mouse-pointer-pointing-left:before { content: "\f179"; }
+.flaticon-move-arrows:before { content: "\f17a"; }
+.flaticon-moving-arrows:before { content: "\f17b"; }
+.flaticon-moving-objects-arrows:before { content: "\f17c"; }
+.flaticon-navigation-down-arrow:before { content: "\f17d"; }
+.flaticon-next-arrow:before { content: "\f17e"; }
+.flaticon-next-arrow-1:before { content: "\f17f"; }
+.flaticon-open-box-with-up-arrow:before { content: "\f180"; }
+.flaticon-opposite-arrows:before { content: "\f181"; }
+.flaticon-play-music-button:before { content: "\f182"; }
+.flaticon-pyramidal-up-arrow:before { content: "\f183"; }
+.flaticon-recycling-curved-arrows:before { content: "\f184"; }
+.flaticon-refresh-arrow:before { content: "\f185"; }
+.flaticon-refresh-arrows:before { content: "\f186"; }
+.flaticon-refreshing-curve-arrows:before { content: "\f187"; }
+.flaticon-resize-arrows:before { content: "\f188"; }
+.flaticon-resize-arrows-1:before { content: "\f189"; }
+.flaticon-resize-browser:before { content: "\f18a"; }
+.flaticon-resize-height:before { content: "\f18b"; }
+.flaticon-resize-length:before { content: "\f18c"; }
+.flaticon-resize-width:before { content: "\f18d"; }
+.flaticon-rewind-arrows:before { content: "\f18e"; }
+.flaticon-rewind-button-arrows:before { content: "\f18f"; }
+.flaticon-right-alignment-and-up-arrow:before { content: "\f190"; }
+.flaticon-right-arrow-from-a-circle:before { content: "\f191"; }
+.flaticon-right-chevron:before { content: "\f192"; }
+.flaticon-right-chevron-with-circle:before { content: "\f193"; }
+.flaticon-right-cursor:before { content: "\f194"; }
+.flaticon-right-curved-arrow:before { content: "\f195"; }
+.flaticon-rotate-arrow:before { content: "\f196"; }
+.flaticon-rotate-object:before { content: "\f197"; }
+.flaticon-rotated-left-and-right-arrows:before { content: "\f198"; }
+.flaticon-rotating-arrow:before { content: "\f199"; }
+.flaticon-rotating-arrow-1:before { content: "\f19a"; }
+.flaticon-rotating-arrow-to-the-right:before { content: "\f19b"; }
+.flaticon-rotating-arrow-with-dotted-lines:before { content: "\f19c"; }
+.flaticon-rotating-circular-arrow:before { content: "\f19d"; }
+.flaticon-rounded-angle-arrow-pointing-down:before { content: "\f19e"; }
+.flaticon-square-arrows:before { content: "\f19f"; }
+.flaticon-square-with-little-squares:before { content: "\f1a0"; }
+.flaticon-squares-inside-a-square:before { content: "\f1a1"; }
+.flaticon-straight-arrow:before { content: "\f1a2"; }
+.flaticon-thick-up-arrow:before { content: "\f1a3"; }
+.flaticon-thin-download-arrow:before { content: "\f1a4"; }
+.flaticon-thin-play-button:before { content: "\f1a5"; }
+.flaticon-thin-up-arrow:before { content: "\f1a6"; }
+.flaticon-three-arrows-form-a-box:before { content: "\f1a7"; }
+.flaticon-three-decreasing-up-arrows:before { content: "\f1a8"; }
+.flaticon-three-diagonal-right-arrows-pointing-up:before { content: "\f1a9"; }
+.flaticon-three-downloading-arrows-and-computing-cloud:before { content: "\f1aa"; }
+.flaticon-three-downloading-arrows-from-a-cloud:before { content: "\f1ab"; }
+.flaticon-three-right-arrows:before { content: "\f1ac"; }
+.flaticon-three-small-arrows:before { content: "\f1ad"; }
+.flaticon-three-triangular-arrows:before { content: "\f1ae"; }
+.flaticon-thunder-bolt-arrow:before { content: "\f1af"; }
+.flaticon-triangular-arrow-facing-left:before { content: "\f1b0"; }
+.flaticon-triangular-arrow-pointing-down:before { content: "\f1b1"; }
+.flaticon-triangular-down-arrow:before { content: "\f1b2"; }
+.flaticon-two-circular-arrows:before { content: "\f1b3"; }
+.flaticon-two-circular-arrows-1:before { content: "\f1b4"; }
+.flaticon-two-curve-arrows:before { content: "\f1b5"; }
+.flaticon-two-curve-arrows-1:before { content: "\f1b6"; }
+.flaticon-two-curve-arrows-2:before { content: "\f1b7"; }
+.flaticon-two-curve-thin-arrows:before { content: "\f1b8"; }
+.flaticon-two-curved-arrows:before { content: "\f1b9"; }
+.flaticon-two-curved-arrows-up-and-down:before { content: "\f1ba"; }
+.flaticon-two-fast-forward-arrows:before { content: "\f1bb"; }
+.flaticon-two-left-chevrons:before { content: "\f1bc"; }
+.flaticon-two-opposite-curved-arrows:before { content: "\f1bd"; }
+.flaticon-two-rotating-arrows:before { content: "\f1be"; }
+.flaticon-two-thin-arrows-forming-a-circle:before { content: "\f1bf"; }
+.flaticon-up-and-down-arrows:before { content: "\f1c0"; }
+.flaticon-up-and-down-arrows-1:before { content: "\f1c1"; }
+.flaticon-up-arrow-and-dotted-down-arrow:before { content: "\f1c2"; }
+.flaticon-up-arrow-from-circle:before { content: "\f1c3"; }
+.flaticon-up-arrow-in-circle:before { content: "\f1c4"; }
+.flaticon-up-chevron-and-circles:before { content: "\f1c5"; }
+.flaticon-upload-from-outbox:before { content: "\f1c6"; }
+.flaticon-uploading-from-box:before { content: "\f1c7"; }
+    
+    $font-Flaticon-archery-arrow: "\f100";
+    $font-Flaticon-arrow-ascendant-point: "\f101";
+    $font-Flaticon-arrow-ascending-from-a-cube: "\f102";
+    $font-Flaticon-arrow-ascending-from-a-cube-1: "\f103";
+    $font-Flaticon-arrow-curve-pointing-up: "\f104";
+    $font-Flaticon-arrow-double-in-diagonal: "\f105";
+    $font-Flaticon-arrow-head-pointing-down: "\f106";
+    $font-Flaticon-arrow-inside-square: "\f107";
+    $font-Flaticon-arrow-of-two-point-to-opposite-directions: "\f108";
+    $font-Flaticon-arrow-point-down: "\f109";
+    $font-Flaticon-arrow-pointing-left: "\f10a";
+    $font-Flaticon-arrow-pointing-left-1: "\f10b";
+    $font-Flaticon-arrow-pointing-left-2: "\f10c";
+    $font-Flaticon-arrow-pointing-left-and-circle: "\f10d";
+    $font-Flaticon-arrow-pointing-up: "\f10e";
+    $font-Flaticon-arrow-pointing-upper-left: "\f10f";
+    $font-Flaticon-arrow-rotating: "\f110";
+    $font-Flaticon-arrow-rotating-1: "\f111";
+    $font-Flaticon-arrows-couple-pointing-opposite-directions: "\f112";
+    $font-Flaticon-arrows-curves-forming-an-oval-shape: "\f113";
+    $font-Flaticon-arrows-meeting: "\f114";
+    $font-Flaticon-back-curved-arrow: "\f115";
+    $font-Flaticon-big-arrow-outline-pointing-down-left: "\f116";
+    $font-Flaticon-big-down-arrow: "\f117";
+    $font-Flaticon-big-right-arrow: "\f118";
+    $font-Flaticon-big-thin-diagonal-arrow: "\f119";
+    $font-Flaticon-blank-document-with-arrow: "\f11a";
+    $font-Flaticon-blank-page-with-arrow-pointing-up: "\f11b";
+    $font-Flaticon-change-height-arrows: "\f11c";
+    $font-Flaticon-chevron-pointin-down: "\f11d";
+    $font-Flaticon-circle-with-arrow: "\f11e";
+    $font-Flaticon-circle-with-down-arrow: "\f11f";
+    $font-Flaticon-circular-arrow: "\f120";
+    $font-Flaticon-circular-arrow-with-dashed-lines: "\f121";
+    $font-Flaticon-circular-arrow-with-dots: "\f122";
+    $font-Flaticon-circular-arrow-with-dots-1: "\f123";
+    $font-Flaticon-circular-converging-arrows: "\f124";
+    $font-Flaticon-circular-refresh-arrows: "\f125";
+    $font-Flaticon-circular-refreshment-arrow: "\f126";
+    $font-Flaticon-clockwise-arrow: "\f127";
+    $font-Flaticon-clockwise-arrow-1: "\f128";
+    $font-Flaticon-cloud-uploading: "\f129";
+    $font-Flaticon-cloud-with-download-arrow: "\f12a";
+    $font-Flaticon-cloud-with-thunder-arrow: "\f12b";
+    $font-Flaticon-concentrical-rounded-arrows: "\f12c";
+    $font-Flaticon-connecting-rotated-left-and-right-arrows: "\f12d";
+    $font-Flaticon-crossing-right-arrows: "\f12e";
+    $font-Flaticon-cursor-pointin-left: "\f12f";
+    $font-Flaticon-cursor-pointing-up: "\f130";
+    $font-Flaticon-curve-arrow: "\f131";
+    $font-Flaticon-curve-arrow-down: "\f132";
+    $font-Flaticon-curve-arrow-pointing-left: "\f133";
+    $font-Flaticon-curve-arrow-pointing-right: "\f134";
+    $font-Flaticon-curve-arrow-with-dots: "\f135";
+    $font-Flaticon-curve-down-arrow: "\f136";
+    $font-Flaticon-curve-down-left-arrow: "\f137";
+    $font-Flaticon-curve-left-arrow: "\f138";
+    $font-Flaticon-curve-thin-up-arrow: "\f139";
+    $font-Flaticon-curved-arrow-pointing-to-right: "\f13a";
+    $font-Flaticon-curved-arrow-pointing-up: "\f13b";
+    $font-Flaticon-curved-back-arrow: "\f13c";
+    $font-Flaticon-curved-down-arrow: "\f13d";
+    $font-Flaticon-curved-next-arrow: "\f13e";
+    $font-Flaticon-curved-refresh-arrows: "\f13f";
+    $font-Flaticon-curved-right-arrow: "\f140";
+    $font-Flaticon-curved-shuffle-arrows: "\f141";
+    $font-Flaticon-curved-up-arrow: "\f142";
+    $font-Flaticon-curved-up-arrow-1: "\f143";
+    $font-Flaticon-curved-up-arrow-2: "\f144";
+    $font-Flaticon-diagonal-arrow-pointing-up-from-a-circle: "\f145";
+    $font-Flaticon-diagonal-indian-arrow-pointing-down: "\f146";
+    $font-Flaticon-diagonal-left-arrow: "\f147";
+    $font-Flaticon-diagonal-left-arrow-going-up: "\f148";
+    $font-Flaticon-diagonal-left-arrow-pointing-down: "\f149";
+    $font-Flaticon-diagonal-right-arrow-going-up: "\f14a";
+    $font-Flaticon-diagonal-right-arrow-pointing-down: "\f14b";
+    $font-Flaticon-diagonal-right-arrow-pointing-down-1: "\f14c";
+    $font-Flaticon-diagonal-thick-arrow-pointing-down: "\f14d";
+    $font-Flaticon-diagonal-thick-arrows-up-and-down: "\f14e";
+    $font-Flaticon-diagonal-up-and-down-arrows: "\f14f";
+    $font-Flaticon-directional-arrows-left-and-right: "\f150";
+    $font-Flaticon-double-resize-arrow: "\f151";
+    $font-Flaticon-down-arrow-and-tex-lines: "\f152";
+    $font-Flaticon-down-arrow-from-a-cube: "\f153";
+    $font-Flaticon-down-arrow-in-a-circle: "\f154";
+    $font-Flaticon-down-arrow-in-a-square: "\f155";
+    $font-Flaticon-down-arrow-inside-a-circle: "\f156";
+    $font-Flaticon-down-arrow-on-a-cube: "\f157";
+    $font-Flaticon-down-arrow-on-document: "\f158";
+    $font-Flaticon-down-curved-arrow: "\f159";
+    $font-Flaticon-download-curve-arrow: "\f15a";
+    $font-Flaticon-eliptical-arrows: "\f15b";
+    $font-Flaticon-export-document: "\f15c";
+    $font-Flaticon-export-document-1: "\f15d";
+    $font-Flaticon-export-document-2: "\f15e";
+    $font-Flaticon-export-left-arrow: "\f15f";
+    $font-Flaticon-export-left-arrow-1: "\f160";
+    $font-Flaticon-fast-forward-arrows: "\f161";
+    $font-Flaticon-fast-forward-thin-arrows: "\f162";
+    $font-Flaticon-flying-paper-plane: "\f163";
+    $font-Flaticon-four-arrows-pointinf-to-the-center: "\f164";
+    $font-Flaticon-four-converging-arrows-at-the-center: "\f165";
+    $font-Flaticon-geometric-pyramid: "\f166";
+    $font-Flaticon-going-circles: "\f167";
+    $font-Flaticon-hexagon-with-left-arrow: "\f168";
+    $font-Flaticon-hexagon-with-right-arrow: "\f169";
+    $font-Flaticon-increasing-up-arrows: "\f16a";
+    $font-Flaticon-indian-arrow: "\f16b";
+    $font-Flaticon-indian-arrow-pointing-down: "\f16c";
+    $font-Flaticon-indian-arrow-poiting-down: "\f16d";
+    $font-Flaticon-indian-right-arrow: "\f16e";
+    $font-Flaticon-insert-in-document: "\f16f";
+    $font-Flaticon-left-arrow: "\f170";
+    $font-Flaticon-left-arrow-with-circle: "\f171";
+    $font-Flaticon-left-back-arrow: "\f172";
+    $font-Flaticon-left-round-angle-arrow: "\f173";
+    $font-Flaticon-lightning-arrow-on-cube: "\f174";
+    $font-Flaticon-line-graph-down-arrow: "\f175";
+    $font-Flaticon-line-graph-with-ascending-arrow: "\f176";
+    $font-Flaticon-masculin-symbol: "\f177";
+    $font-Flaticon-mouse-cursor-pointing-down: "\f178";
+    $font-Flaticon-mouse-pointer-pointing-left: "\f179";
+    $font-Flaticon-move-arrows: "\f17a";
+    $font-Flaticon-moving-arrows: "\f17b";
+    $font-Flaticon-moving-objects-arrows: "\f17c";
+    $font-Flaticon-navigation-down-arrow: "\f17d";
+    $font-Flaticon-next-arrow: "\f17e";
+    $font-Flaticon-next-arrow-1: "\f17f";
+    $font-Flaticon-open-box-with-up-arrow: "\f180";
+    $font-Flaticon-opposite-arrows: "\f181";
+    $font-Flaticon-play-music-button: "\f182";
+    $font-Flaticon-pyramidal-up-arrow: "\f183";
+    $font-Flaticon-recycling-curved-arrows: "\f184";
+    $font-Flaticon-refresh-arrow: "\f185";
+    $font-Flaticon-refresh-arrows: "\f186";
+    $font-Flaticon-refreshing-curve-arrows: "\f187";
+    $font-Flaticon-resize-arrows: "\f188";
+    $font-Flaticon-resize-arrows-1: "\f189";
+    $font-Flaticon-resize-browser: "\f18a";
+    $font-Flaticon-resize-height: "\f18b";
+    $font-Flaticon-resize-length: "\f18c";
+    $font-Flaticon-resize-width: "\f18d";
+    $font-Flaticon-rewind-arrows: "\f18e";
+    $font-Flaticon-rewind-button-arrows: "\f18f";
+    $font-Flaticon-right-alignment-and-up-arrow: "\f190";
+    $font-Flaticon-right-arrow-from-a-circle: "\f191";
+    $font-Flaticon-right-chevron: "\f192";
+    $font-Flaticon-right-chevron-with-circle: "\f193";
+    $font-Flaticon-right-cursor: "\f194";
+    $font-Flaticon-right-curved-arrow: "\f195";
+    $font-Flaticon-rotate-arrow: "\f196";
+    $font-Flaticon-rotate-object: "\f197";
+    $font-Flaticon-rotated-left-and-right-arrows: "\f198";
+    $font-Flaticon-rotating-arrow: "\f199";
+    $font-Flaticon-rotating-arrow-1: "\f19a";
+    $font-Flaticon-rotating-arrow-to-the-right: "\f19b";
+    $font-Flaticon-rotating-arrow-with-dotted-lines: "\f19c";
+    $font-Flaticon-rotating-circular-arrow: "\f19d";
+    $font-Flaticon-rounded-angle-arrow-pointing-down: "\f19e";
+    $font-Flaticon-square-arrows: "\f19f";
+    $font-Flaticon-square-with-little-squares: "\f1a0";
+    $font-Flaticon-squares-inside-a-square: "\f1a1";
+    $font-Flaticon-straight-arrow: "\f1a2";
+    $font-Flaticon-thick-up-arrow: "\f1a3";
+    $font-Flaticon-thin-download-arrow: "\f1a4";
+    $font-Flaticon-thin-play-button: "\f1a5";
+    $font-Flaticon-thin-up-arrow: "\f1a6";
+    $font-Flaticon-three-arrows-form-a-box: "\f1a7";
+    $font-Flaticon-three-decreasing-up-arrows: "\f1a8";
+    $font-Flaticon-three-diagonal-right-arrows-pointing-up: "\f1a9";
+    $font-Flaticon-three-downloading-arrows-and-computing-cloud: "\f1aa";
+    $font-Flaticon-three-downloading-arrows-from-a-cloud: "\f1ab";
+    $font-Flaticon-three-right-arrows: "\f1ac";
+    $font-Flaticon-three-small-arrows: "\f1ad";
+    $font-Flaticon-three-triangular-arrows: "\f1ae";
+    $font-Flaticon-thunder-bolt-arrow: "\f1af";
+    $font-Flaticon-triangular-arrow-facing-left: "\f1b0";
+    $font-Flaticon-triangular-arrow-pointing-down: "\f1b1";
+    $font-Flaticon-triangular-down-arrow: "\f1b2";
+    $font-Flaticon-two-circular-arrows: "\f1b3";
+    $font-Flaticon-two-circular-arrows-1: "\f1b4";
+    $font-Flaticon-two-curve-arrows: "\f1b5";
+    $font-Flaticon-two-curve-arrows-1: "\f1b6";
+    $font-Flaticon-two-curve-arrows-2: "\f1b7";
+    $font-Flaticon-two-curve-thin-arrows: "\f1b8";
+    $font-Flaticon-two-curved-arrows: "\f1b9";
+    $font-Flaticon-two-curved-arrows-up-and-down: "\f1ba";
+    $font-Flaticon-two-fast-forward-arrows: "\f1bb";
+    $font-Flaticon-two-left-chevrons: "\f1bc";
+    $font-Flaticon-two-opposite-curved-arrows: "\f1bd";
+    $font-Flaticon-two-rotating-arrows: "\f1be";
+    $font-Flaticon-two-thin-arrows-forming-a-circle: "\f1bf";
+    $font-Flaticon-up-and-down-arrows: "\f1c0";
+    $font-Flaticon-up-and-down-arrows-1: "\f1c1";
+    $font-Flaticon-up-arrow-and-dotted-down-arrow: "\f1c2";
+    $font-Flaticon-up-arrow-from-circle: "\f1c3";
+    $font-Flaticon-up-arrow-in-circle: "\f1c4";
+    $font-Flaticon-up-chevron-and-circles: "\f1c5";
+    $font-Flaticon-upload-from-outbox: "\f1c6";
+    $font-Flaticon-uploading-from-box: "\f1c7";
