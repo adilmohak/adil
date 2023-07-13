@@ -1,4 +1,3 @@
-# adil.github.io
+# https://adilmohak.github.io/adil
 
-## Portfolio Website
-
+Simple portfolio website

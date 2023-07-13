@@ -1,0 +1,95 @@
+{
+  "blogs": [
+    {
+      "id": 1,
+      "title": "Why is Python my favorite programming language to work with?",
+      "description": "I can hack out an idea in a night and it just works. That's really nice to have, but is the result of plenty of practice. Lots of open source artistic programs have python api’s. My favorite examples are gimp and blender. This is why I first learned python, so I could use it to do crazy things with existing software.",
+      "likes": 127,
+      "comments": 43
+    },
+    {
+      "id": 2,
+      "title": "Further Optimization of django apps",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt assumenda blanditiis, nam excepturi impedit quidem dicta, perferendis id repellat officiis nesciunt maiores pariatur harum? Quisquam aut suscipit vel autem sed.",
+      "likes": 85,
+      "comments": 12
+    },
+    {
+      "id": 3,
+      "title": "Why jQuery is created and what are the special capabilities of jQuery?",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt assumenda blanditiis, nam excepturi impedit quidem dicta, perferendis id repellat officiis nesciunt maiores pariatur harum? Quisquam aut suscipit vel autem sed.",
+      "likes": 343,
+      "comments": 65
+    },
+    {
+      "id": 4,
+      "title": "Keep your code DRY (Don’t Repeat Yourself)",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt assumenda blanditiis, nam excepturi impedit quidem dicta, perferendis id repellat officiis nesciunt maiores pariatur harum? Quisquam aut suscipit vel autem sed.",
+      "likes": 127,
+      "comments": 43
+    },
+    {
+      "id": 5,
+      "title": "Best web application tools for 2021",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt assumenda blanditiis, nam excepturi impedit quidem dicta, perferendis id repellat officiis nesciunt maiores pariatur harum? Quisquam aut suscipit vel autem sed.",
+      "likes": 127,
+      "comments": 43
+    },
+    {
+      "id": 6,
+      "title": "Lorem ipsum dolor sit amet consectetur adipisicing elit",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt assumenda blanditiis, nam excepturi impedit quidem dicta, perferendis id repellat officiis nesciunt maiores pariatur harum? Quisquam aut suscipit vel autem sed.",
+      "likes": 127,
+      "comments": 43
+    },
+    {
+      "id": 7,
+      "title": "Lorem ipsum dolor sit amet consectetur adipisicing elit",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt assumenda blanditiis, nam excepturi impedit quidem dicta, perferendis id repellat officiis nesciunt maiores pariatur harum? Quisquam aut suscipit vel autem sed.",
+      "likes": 127,
+      "comments": 43
+    },
+    {
+      "id": 8,
+      "title": "Lorem ipsum dolor sit amet consectetur adipisicing elit",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt assumenda blanditiis, nam excepturi impedit quidem dicta, perferendis id repellat officiis nesciunt maiores pariatur harum? Quisquam aut suscipit vel autem sed.",
+      "likes": 127,
+      "comments": 43
+    },
+    {
+      "id": 9,
+      "title": "Lorem ipsum dolor sit amet consectetur adipisicing elit",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt assumenda blanditiis, nam excepturi impedit quidem dicta, perferendis id repellat officiis nesciunt maiores pariatur harum? Quisquam aut suscipit vel autem sed.",
+      "likes": 127,
+      "comments": 43
+    },
+    {
+      "id": 10,
+      "title": "Lorem ipsum dolor sit amet consectetur adipisicing elit",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt assumenda blanditiis, nam excepturi impedit quidem dicta, perferendis id repellat officiis nesciunt maiores pariatur harum? Quisquam aut suscipit vel autem sed.",
+      "likes": 127,
+      "comments": 43
+    },
+    {
+      "id": 11,
+      "title": "Lorem ipsum dolor sit amet consectetur adipisicing elit",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt assumenda blanditiis, nam excepturi impedit quidem dicta, perferendis id repellat officiis nesciunt maiores pariatur harum? Quisquam aut suscipit vel autem sed.",
+      "likes": 127,
+      "comments": 43
+    },
+    {
+      "id": 12,
+      "title": "Lorem ipsum dolor sit amet consectetur adipisicing elit",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt assumenda blanditiis, nam excepturi impedit quidem dicta, perferendis id repellat officiis nesciunt maiores pariatur harum? Quisquam aut suscipit vel autem sed.",
+      "likes": 127,
+      "comments": 43
+    },
+    {
+      "id": 13,
+      "title": "Lorem ipsum dolor sit amet consectetur adipisicing elit",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt assumenda blanditiis, nam excepturi impedit quidem dicta, perferendis id repellat officiis nesciunt maiores pariatur harum? Quisquam aut suscipit vel autem sed.",
+      "likes": 127,
+      "comments": 43
+    }
+  ]
+}
